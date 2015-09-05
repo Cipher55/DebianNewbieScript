@@ -35,7 +35,7 @@ If you recieve any errors, such as "Permission Denied", preform
 <code>su</code>
 
 then preform
-<code>chmod 665 newbie.sh</code>
+<code>chmod 777 newbie.sh</code>
 
 then exit, and run the script. If you run the script in the current terminal, it will fail. It must be run with the arguments as listed above.
 
