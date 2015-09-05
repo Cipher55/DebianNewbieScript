@@ -254,6 +254,7 @@ read -rn1 ans
 if [ "${ans:0:1}" = "Y" ] || [ "${ans:0:1}" = "y" ]; then
   echo " "
   echo "Now continuing"
+  sleep 1
   clear
 fi
 
@@ -269,7 +270,9 @@ if [ "${ans:0:1}" = "N" ] || [ "${ans:0:1}" = "n" ]; then
   exit 1
 fi
 
+echo " "
 echo "Now continuing..."
+sleep 1
 
 ######################
 # Last begin echo(s) #
@@ -300,10 +303,6 @@ echo "
 # The MAIN Debian Repo
 deb ftp://ftp.debian.org/debian/ jessie main
 deb-src ftp://ftp.debian.org/debian/ jessie main
-
-# Debian security updates
-deb http://security.debian.org/ jessie/updates main
-deb-src http://security.debian.org/ jessie/updates main
 
 # Debian updates (previously known as Volatile)
 deb ftp://ftp.debian.org/debian/ jessie-updates main
@@ -344,15 +343,10 @@ apt-get install -y wget
 apt-get install -y ntp
 apt-get install -y htop
 
-#################################################################################
-# Information to change ftp to http now that apt-transport-http(s) is installed #
-#################################################################################
+##################################################################
+# Change ftp to http now that apt-transport-http(s) is installed #
+##################################################################
 echo "
-I highly reccomend you put these into your sources.list folder. Do this by doing
-sudo nano /etc/apt/sources.list
-
-Change the US to your own country's country code. HTTP is faster than ftp.
-
 # These are your Debian source files. Whenever changing them, preform apt-get update
 # or aptitude update. To use non-free packages, add the words contrib non-free to the
 # ends of these lines. It is highly recommended that you DO NOT USE NON-FREE PACKAGES.
@@ -360,19 +354,23 @@ Change the US to your own country's country code. HTTP is faster than ftp.
 # the sake of users who wish to use them. Please don't.
 
 # The MAIN Debian Repo
-deb http://http.us.debian.org/Debian/ jessie main
-deb-src http://http.us.debian.org/Debian/ jessie main
+deb http://httpredir.debian.org/debian/ jessie main
+deb-src http://httpredir.debian.org/debian/ jessie main
 
 # Debian security updates
 deb http://security.debian.org/ jessie/updates main
 deb-src http://security.debian.org/ jessie/updates main
 
 # Debian updates (previously known as Volatile)
-deb http://http.us.debian.org/Debian/ jessie-updates main
-deb-src http://http.us.debian.org/Debian/ jessie-updates main
+deb http://httpredir.debian.org/debian/ jessie-updates main
+deb-src http://httpredir.debian.org/debian/ jessie-updates main
 
 
- " > "$HOME/Desktop/SOURCES.LIST"
+ " > /etc/apt/sources.list
+
+apt-get update
+apt-get -y upgrade
+apt-get -y dist-upgrade
 
 ###########################
 # more essential packages #
