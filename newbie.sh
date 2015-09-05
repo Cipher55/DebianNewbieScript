@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 #     ________                     __      __          ________    _          
 #    / ____/ /_  ____  _________  / /___ _/ /____     / ____/ /_  (_)___      
@@ -36,7 +36,12 @@
 # Please email all bug reports to the same address.
 # You can also contact me on #Chocolate_Chip on the network irc.canternet.org (please use the SSL Port 6697.)
 
-# Start echo(s)
+# The reason that some prompts are listed twice is so if the person presses return, it will do the caps letter
+# option.
+
+#################
+# Start echo(s) #
+#################
 clear
 echo "
 Copyright (c) 2015
@@ -85,10 +90,10 @@ echo "To continue, type c. To quit, type q [C/q]"
 read -rn1 ans
 
 if [ "${ans:0:1}" = "C" ] || [ "${ans:0:1}" = "c" ]; then
-echo " "
-echo "Continuing..."
-sleep 1
-clear
+  echo " "
+  echo "Continuing..."
+  sleep 1
+  clear
 fi
 
 if [ "${ans:0:1}" = "Q" ] || [ "${ans:0:1}" = "q" ]; then
@@ -1272,10 +1277,10 @@ echo "this script and preform more commands. [R/q]"
 read -rn1 ans
 
 if [ "${ans:0:1}" = "R" ] || [ "${ans:0:1}" = "r" ]; then
-sleep 1
-clear
+  sleep 1
+c  lear
 
-echo "          ]Pf767676[1;37m▄]Pf9e9e9e[1;37m▄]P7bcbcbc[47m]Pfeeeeee[1;37m▄]P7808080[47m]Pfffffff[1;37m▄▄]P7949494[47m▄]P7a8a8a8[47m▄▄▄]Pfdadada[1;37m▄]P7949494[47m]Pfe4e4e4[1;37m▄]P76c6c6c[47m]Pfffffff[1;37m▄]P7767676[47m▄]P7c6c6c6[47m]Pfdadada[1;37m▄[49m]Pf4e4e4e[1;37m▄]Pfe4e4e4[1;37m▄[39m                        ]Pfc6c6c6[1;37m▄]Pf808080[1;37m▄]P7d7d7d7[47m ]P7a8a8a8[47m]Pfffffff[1;37m▄]P7949494[47m▄▄▄▄]P79e9e9e[47m▄]P7bcbcbc[47m]Pfeeeeee[1;37m▄[49m]Pfbcbcbc[1;37m▄]Pf8a8a8a[1;37m▄]Pfbcbcbc[1;37m▄[39m        ]P7aaaaaa]Pfffffff[0m
+  echo "        ]Pf767676[1;37m▄]Pf9e9e9e[1;37m▄]P7bcbcbc[47m]Pfeeeeee[1;37m▄]P7808080[47m]Pfffffff[1;37m▄▄]P7949494[47m▄]P7a8a8a8[47m▄▄▄]Pfdadada[1;37m▄]P7949494[47m]Pfe4e4e4[1;37m▄]P76c6c6c[47m]Pfffffff[1;37m▄]P7767676[47m▄]P7c6c6c6[47m]Pfdadada[1;37m▄[49m]Pf4e4e4e[1;37m▄]Pfe4e4e4[1;37m▄[39m                        ]Pfc6c6c6[1;37m▄]Pf808080[1;37m▄]P7d7d7d7[47m ]P7a8a8a8[47m]Pfffffff[1;37m▄]P7949494[47m▄▄▄▄]P79e9e9e[47m▄]P7bcbcbc[47m]Pfeeeeee[1;37m▄[49m]Pfbcbcbc[1;37m▄]Pf8a8a8a[1;37m▄]Pfbcbcbc[1;37m▄[39m        ]P7aaaaaa]Pfffffff[0m
        ]Pf262626[1;37m▄]P7767676[47m]Pfeeeeee[1;37m▄]P79e9e9e[47m]Pfffffff[1;37m▄]P7ffffff[47m ]P7b2b2b2[47m▀]P7e4e4e4[47m]Pf262626[1;37m▄]P7eeeeee[47m▄]P7bcbcbc[47m]Pf4e4e4e[1;37m▄]P7000000[47m]Pf878787[1;37m▄]Pfbcbcbc[1;37m▄]P7767676[47m▄]P7000000[47m]Pfc6c6c6[1;37m▄]P71c1c1c[47m]Pfffffff[1;37m▄]P7000000[47m]Pfe4e4e4[1;37m▄]Pfd7d7d7[1;37m▄]P7080808[47m]Pfffffff[1;37m▄]P7767676[47m]Pfeeeeee[1;37m▄]P7ffffff[47m]Pfa8a8a8[1;37m▄]P7bcbcbc[47m]Pfeeeeee[1;37m▄]P7808080[47m]Pfffffff[1;37m▄]P7eeeeee[47m]Pfbcbcbc[1;37m▄[49m]Pfb2b2b2[1;37m▄]Pf4e4e4e[1;37m▄[39m                ]Pf808080[1;37m▄]Pf949494[1;37m▄]Pfa8a8a8[1;37m▄]P7767676[47m]Pfffffff[1;37m▄]P7eeeeee[47m]Pfb2b2b2[1;37m▄]Pf949494[1;37m▄]P7bcbcbc[47m]Pfdadada[1;37m▄]P7a8a8a8[47m]Pf585858[1;37m▄]P7262626[47m]Pfd0d0d0[1;37m▄]P7949494[47m]Pfa8a8a8[1;37m▄]P7d0d0d0[47m]Pf444444[1;37m▄]P7b2b2b2[47m]Pf3a3a3a[1;37m▄]P79e9e9e[47m]Pf4e4e4e[1;37m▄]P7ffffff[47m]Pf3a3a3a[1;37m▄]Pf767676[1;37m▄]Pf5f5f5f[1;37m▄]Pfeeeeee[1;37m▀]Pf767676[1;37m▀]P7d7d7d7[47m]Pfbcbcbc[1;37m▄[49m]Pf949494[1;37m▄[39m     ]P7aaaaaa]Pfffffff[0m
      ]Pf626262[1;37m▄]P76c6c6c[47m]Pfffffff[1;37m▄]P7ffffff[47m ]P7afafaf[47m▀]Pf4e4e4e[1;37m▄]P7a8a8a8[47m]Pf585858[1;37m▄]P73a3a3a[47m]Pf303030[1;37m▄]P75f5f5f[47m]Pfe4e4e4[1;37m▄]P7949494[47m]Pfffffff[1;37m▄]P7878787[47m▄]P7949494[47m▀]P7626262[47m▀]P7eeeeee[47m]Pfb2b2b2[1;37m▄[49m]Pfbcbcbc[1;37m▀]Pf9e9e9e[1;37m▀]Pf949494[1;37m▀]Pfafafaf[1;37m▀]P7d0d0d0[47m]Pfc6c6c6[1;37m▄]P7eeeeee[47m]Pf9e9e9e[1;37m▄]P7ffffff[47m]Pf808080[1;37m▄▄]Pf949494[1;37m▄]P7eeeeee[47m]Pfb2b2b2[1;37m▄[49m]Pf8a8a8a[1;37m▀[39m                 ]Pf8a8a8a[1;37m▀]P7ffffff[47m]Pf949494[1;37m▄]Pfa8a8a8[1;37m▄▄]Pf9e9e9e[1;37m▄▄]Pf949494[1;37m▄]Pfafafaf[1;37m▄]P7e4e4e4[47m]Pfd7d7d7[1;37m▄▄]P7ffffff[47m]Pfb2b2b2[1;37m▄]Pf767676[1;37m▄]Pfb2b2b2[1;37m▄]Pf000000[1;37m▀▀]P74e4e4e[47m]Pf8a8a8a[1;37m▄]Pfafafaf[1;37m▀]P7e4e4e4[47m]Pf303030[1;37m▄]P7ffffff[47m]Pf9e9e9e[1;37m▄]Pfd7d7d7[1;37m▀]P7808080[47m▄[49m]Pf9e9e9e[1;37m▄[39m   ]P7aaaaaa]Pfffffff[0m
    ]Pf949494[1;37m▄]P7262626[47m]Pfeeeeee[1;37m▄]P7ffffff[47m ]Pfd0d0d0[1;37m▄]P7c6c6c6[47m]Pf3a3a3a[1;37m▄]P7262626[47m]Pf585858[1;37m▄]P75f5f5f[47m]Pf000000[1;37m▄]P7080808[47m]Pfffffff[1;37m▄]P7a8a8a8[47m▄]P7808080[47m▀[49m]Pfb2b2b2[1;37m▀]Pf767676[1;37m▀[39m                                            ]Pf767676[1;37m▀]P7eeeeee[47m]Pf878787[1;37m▄]P7e4e4e4[47m ]P7000000[47m]Pfffffff[1;37m▄]P7585858[47m]Pf9e9e9e[1;37m▄]Pf080808[1;37m▀]P7e4e4e4[47m]Pf000000[1;37m▄]P7ffffff[47m]Pfdadada[1;37m▄]Pfafafaf[1;37m▀]P7dadada[47m]Pf4e4e4e[1;37m▄[39m[49m  ]P7aaaaaa]Pfffffff[0m
@@ -1314,25 +1319,26 @@ echo "          ]Pf767676[1;37m▄]Pf9e9e9e[1;37m▄]P7bcbcbc[47m]Pfeeeee
                                                       http://gnu.org/philosophy                   
 
 "
-echo "restarting..."
-sleep 8
-reboot
+  echo "restarting..."
+  sleep 8
+  reboot
 fi
 
 if [ "${ans:0:1}" = "Q" ] || [ "${ans:0:1}" = "q" ]; then
-clear
-echo "Ok then. Just remember you need to restart your computer as soon as you are done with"
-echo "whatever it is you need to do. Your computer is not usable in its current state, except for"
-echo "this terminal. Preform your commands, then preform the command"
-echo "sudo reboot"
-echo "then enter your own password."
-sleep 3
-clear
-echo "Now re-entering BASH"
-sleep 2
-clear
-exit 1
+  clear
+  echo "Ok then. Just remember you need to restart your computer as soon as you are done with"
+  echo "whatever it is you need to do. Your computer is not usable in its current state, except for"
+  echo "this terminal. Preform your commands, then preform the command"
+  echo "sudo reboot"
+  echo "then enter your own password."
+  sleep 3
+  clear
+  echo "Now re-entering BASH"
+  sleep 2
+  clear
+  exit 1
 fi
+
 sleep 1
 clear
 echo "          ]Pf767676[1;37m▄]Pf9e9e9e[1;37m▄]P7bcbcbc[47m]Pfeeeeee[1;37m▄]P7808080[47m]Pfffffff[1;37m▄▄]P7949494[47m▄]P7a8a8a8[47m▄▄▄]Pfdadada[1;37m▄]P7949494[47m]Pfe4e4e4[1;37m▄]P76c6c6c[47m]Pfffffff[1;37m▄]P7767676[47m▄]P7c6c6c6[47m]Pfdadada[1;37m▄[49m]Pf4e4e4e[1;37m▄]Pfe4e4e4[1;37m▄[39m                        ]Pfc6c6c6[1;37m▄]Pf808080[1;37m▄]P7d7d7d7[47m ]P7a8a8a8[47m]Pfffffff[1;37m▄]P7949494[47m▄▄▄▄]P79e9e9e[47m▄]P7bcbcbc[47m]Pfeeeeee[1;37m▄[49m]Pfbcbcbc[1;37m▄]Pf8a8a8a[1;37m▄]Pfbcbcbc[1;37m▄[39m        ]P7aaaaaa]Pfffffff[0m
