@@ -92,9 +92,9 @@ clear
 fi
 
 if [ "${ans:0:1}" = "Q" ] || [ "${ans:0:1}" = "q" ]; then
-clear
-echo "Ok then..."
-echo "                                              
+  clear
+  echo "Ok then..."
+  echo "                                              
                                    =????==                                      
                                    ?????????=                                   
                                    ???????????=                                 
@@ -142,15 +142,16 @@ echo "
                              ?I? ?II???????????????????????                     
                            ??I?  ?II=??????????????????????=    
 "
-echo " "
-echo "Thank you for choosing Chocolate Chip Computing for your new GNU/Linux Experience!"
-sleep 3
-clear
-exit 1
+  echo " "
+  echo "Thank you for choosing Chocolate Chip Computing for your new GNU/Linux Experience!"
+  sleep 3
+  clear
+  exit 1
 fi
 
-
-# License Script
+##################
+# License Script #
+##################
 echo "
 Debian Newbie Script v0.3.2 beta  Copyright (C) 2015  Chocolate Chip Computing
 This program comes with ABSOLUTELY NO WARRANTY; for details type d.
@@ -160,7 +161,7 @@ under certain conditions; type c to continue, or d for details, [C/d]
 read -rn1 ans
 
 if [ "${ans:0:1}" = "D" ] || [ "${ans:0:1}" = "d" ]; then
-echo "
+  echo "
     Debian Newbie Script v0.3.2 beta: A script to optimize a fresh install for Debian Newbies
     Copyright (C) 2015 Chocolate Chip Computing
 
@@ -181,40 +182,44 @@ echo "
     on the network irc.canternet.org. The programmer can also be contacted
     via email. The email address is chocolatechip@derpymail.org.
 "
-echo " "
-echo "Now continuing..."
-sleep 1
+  echo " "
+  echo "Now continuing..."
+  sleep 1
 fi
 
 if [ "${ans:0:1}" = "C" ] || [ "${ans:0:1}" = "c" ]; then
-clear
-echo "
-Very well. The license terms can be viewed at
-https://gnu.org/licenses
+  clear
+  echo "
+    Very well. The license terms can be viewed at
+    https://gnu.org/licenses
 "
-echo "Now Continuing..."
+  echo "Now Continuing..."
 fi
+
 clear
 echo "
-Very well. The license terms can be viewed at
-https://gnu.org/licenses
+   Very well. The license terms can be viewed at
+   https://gnu.org/licenses
 "
 sleep 2
 echo "Now Continuing..."
-# Confirm Script 1
+
+####################
+# Confirm Script 1 #
+####################
 clear
 echo " "
 echo "The script is starting."
 echo " "
 if [ "$(whoami)" != "root" ]; then
-    echo " "
-    echo "Uh oh!"
-    echo " "
-    echo "You ether did the command wrong, or did not do it at all."
-    echo " "
-    echo "Please run as root by doing su -m -p -c ./newbie.sh and entering your root password" 
-    echo "you chose at install."
-    exit 1
+  echo " "
+  echo "Uh oh!"
+  echo " "
+  echo "You ether did the command wrong, or did not do it at all."
+  echo " "
+  echo "Please run as root by doing su -m -p -c ./newbie.sh and entering your root password" 
+  echo "you chose at install."
+  exit 1
 fi
 echo " "
 echo " "
@@ -222,7 +227,9 @@ echo "You are running as Root! Thanks!"
 sleep 1
 clear
 
-# Confirm Script 2
+####################
+# Confirm Script 2 #
+####################
 echo "Are you SURE you want to continue? This will take a long time."
 echo "You will have to MANUALLY UNDO any changes from this point on!"
 echo " "
@@ -236,24 +243,26 @@ echo "Continue? [Y/n]?"
 read -rn1 ans
 
 if [ "${ans:0:1}" = "Y" ] || [ "${ans:0:1}" = "y" ]; then
-echo " "
-echo "Now continuing"
-clear
+  echo " "
+  echo "Now continuing"
+  clear
 fi
 
 if [ "${ans:0:1}" = "N" ] || [ "${ans:0:1}" = "n" ]; then
-clear
-echo " "
-echo "Exiting..."
-sleep 1
-clear
-echo "Thank you for choosing Chocolate Chip Computing for your new GNU/Linux Experience!"
-sleep 1
-clear
-exit 1
+  clear
+  echo " "
+  echo "Exiting..."
+  sleep 1
+  clear
+  echo "Thank you for choosing Chocolate Chip Computing for your new GNU/Linux Experience!"
+  sleep 1
+  clear
+  exit 1
 fi
 
-# Last begin echo(s)
+######################
+# Last begin echo(s) #
+######################
 clear
 echo "This begins the automated portion of this script. If you wish to quit, preform:"
 echo "su -c killall newbie.sh"
@@ -263,9 +272,13 @@ echo "Some packages may require additional verification. Please don't go to far 
 echo "From your terminal"
 echo " "
 
-# All steps are alphabetical unless order is a necessity
+##########################################################
+# All steps are alphabetical unless order is a necessity #
+##########################################################
 
-# Prerequisites
+#################
+# Prerequisites #
+#################
 echo "
 # These are your Debian source files. Whenever changing them, preform apt-get update
 # or aptitude update. To use non-free packages, add the words contrib non-free to the
@@ -287,20 +300,25 @@ deb-src ftp://ftp.debian.org/debian/ jessie-updates main
 
 " > /etc/apt/sources.list
 
-# Debian 
-# Begin Automation
+####################
+# Begin Automation #
+####################
 apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
 
-# remove other DEs
+####################
+# remove other DEs #
+####################
 apt-get remove --purge -y gnome.
 apt-get remove --purge -y kde.
 apt-get remove --purge -y xfce.
 apt-get remove --purge -y cinnamon.
 apt-get remove --purge -y mate.
 
-# install needed packages
+###########################
+# install needed packages #
+###########################
 apt-get install -y firmware-linux-free
 apt-get install -y tar
 apt-get install -y zip
@@ -315,7 +333,9 @@ apt-get install -y wget
 apt-get install -y ntp
 apt-get install -y htop
 
-# Change ftp to http now that apt-transport-http(s) is installed
+################################################################################
+# Information to hange ftp to http now that apt-transport-http(s) is installed #
+################################################################################
 echo "
 I highly reccomend you put these into your sources.list folder. Do this by doing
 sudo nano /etc/apt/sources.list
@@ -343,7 +363,9 @@ deb-src http://http.us.debian.org/Debian/ jessie-updates main
 
  " > "$HOME/Desktop/SOURCES.LIST"
 
-# more essential packages
+###########################
+# more essential packages #
+###########################
 apt-get install -y alsa-base
 apt-get install -y alsa-base-udeb
 apt-get install -y alsa-tools
@@ -359,7 +381,9 @@ apt-get install -y paman
 apt-get install -y telnet
 apt-get install -y ssh
 
-# install LXDE, remove some bloat, personalization
+####################################################
+# install LXDE, remove some bloat, personalization #
+####################################################
 apt-get install -y --no-install-recommends lxde-core
 apt-get install -y --no-install-recommends lxde
 apt-get install -y --no-install-recommends lxde-common
@@ -409,7 +433,9 @@ apt-get install -y clearlooks-phenix-theme
 apt-get install -y hunspell-en-us
 apt-get install -y hyphen-en-us
 
-# Add some good, everyday programs
+####################################
+# Add some good, everyday programs #
+####################################
 apt-get install -y --no-install-recommends aspell
 apt-get install -y aspell-en
 apt-get install -y gimp
@@ -427,9 +453,10 @@ apt-get install -y shutter
 apt-get install -y deluge
 apt-get install -y synaptic
 
-
-# Gnash is wget due to it not being in the repo for jessie. Adding the 
-# backported repo would cause too many problems for a n00b
+##########################################################################
+# Gnash is wget due to it not being in the repo for jessie. Adding the   #
+# backported repo would cause too many problems for a n00b               #
+##########################################################################
 wget http://http.us.debian.org/Debian/pool/main/g/gnash/gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash.deb
 wget http://http.us.debian.org/Debian/pool/main/g/gnash/gnash-common_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-common.deb
 dpkg -i /tmp/gnash.deb
@@ -438,17 +465,23 @@ apt-get -f -y install
 rm /tmp/gnash.deb
 rm /tmp/gnash-common.deb
 
-# Cursor Packages 
-# THESE ARE A DEPENDENCY FURTHER IN THE SCRIPT
+##################################################
+# Cursor Packages                                #
+# THESE ARE A DEPENDENCY FURTHER IN THE SCRIPT   #
+##################################################
 apt-get install -y --no-install-recommends dmz-cursor-theme
 apt-get install -y --no-install-recommends x-cursor-theme
 
-# Some privacy tools
+######################
+# Some privacy tools #
+######################
 apt-get install -y bleachbit
 apt-get install -y gnupg
 apt-get install -y keepass2
 
-# TOR v. 5.0.2 Anonizer Network script
+########################################
+# TOR v. 5.0.2 Anonizer Network script #
+########################################
 apt-get install -y tor
 wget https://www.torproject.org/dist/torbrowser/5.0.2/tor-browser-linux32-5.0.2_en-US.tar.xz -O /tmp/tor.tar.xz
 tar xvf /tmp/tor.tar.xz -C /opt/tor
@@ -460,7 +493,9 @@ If you wish to remove tor, preform the commands:
 apt-get remove --purge tor
 rm -r -f /opt/tor" > "$HOME/Desktop/anon"
 
-# I2P Script
+##############
+# I2P Script #
+##############
 echo "deb http://deb.i2p2.no/ jessie main
 deb-src http://deb.i2p2.no/ jessie main" > /etc/apt/sources.list.d/i2p.list
 wget https://geti2p.net/_static/i2p-debian-repo.key.asc -O /tmp/i2p.key.asc
@@ -496,17 +531,25 @@ If you want to reach eepsites via your browser, have a look on the browser proxy
 For more information, see: https://geti2p.net/en/download/Debian#Post-install_work
 " > "$HOME/Desktop/anon/i2p"
 
-# Communication tools
+#######################
+# Communication tools #
+#######################
 apt-get install -y evolution
-# Hexchat instead of weechat or irissi or IRCii because a GUI is easiest for a n00b
+#####################################################################################
+# Hexchat instead of weechat or irissi or IRCii because a GUI is easiest for a n00b #
+#####################################################################################
 apt-get install -y hexchat
 
-# Media tools
+###############
+# Media tools #
+###############
 apt-get install -y vlc
 apt-get install -y lame
-# DO NOT REMOVE SOX FROM THIS LIST. IT IS A DEPENDENCY FURTHER IN THE SCRIPT
+#####################################################
+# DO NOT REMOVE SOX OR VORBIS-TOOLS FROM THIS LIST. #
+# IT IS A DEPENDENCY FURTHER IN THE SCRIPT          #
+#####################################################
 apt-get install -y sox
-# DO NOT REMOVE VORBIS-TOOLS FROM THIS LIST. IT IS A DEPENDENCY FURTHER IN THE SCRIPT
 apt-get install -y vorbis-tools
 
 # remove some other packages that (may) come pre-bundled
@@ -517,7 +560,9 @@ apt-get remove --purge -y kmail
 apt-get remove --purge -y konsole
 apt-get remove --purge -y deluge
 
-# qTox, the skype replacement's script
+########################################
+# qTox, the skype replacement's script #
+########################################
 echo "deb https://pkg.tox.chat/debian nightly release" > /etc/apt/sources.list.d/tox.list
 wget https://pkg.tox.chat/debian/pkg.gpg.key -O /tmp/pkg.gpg.key
 apt-key add /tmp/pkg.gpg.key
@@ -529,11 +574,15 @@ apt-get install -y --force-yes qtox
 mkdir /usr/share/icons/qTox
 wget https://wiki.tox.chat/lib/tpl/vector/user/logo.png -O /usr/share/icons/qTox/qTox.png
 
-# Shutter Docs
+################
+# Shutter Docs #
+################
 echo "Shutter is a tool much like Snipping Tool for Windows Vista and later.
 Simply open it, click selection, select, and press enter. You have now taken a screenshot." > "$HOME/Dekstop/tools/Shutter"
 
-# Redshift script
+###################
+# Redshift script #
+###################
 echo "Find an example config file at the Redshift website. 
 Also, further instructions will be there as well.
 My own redshift config is:
@@ -600,7 +649,9 @@ screen=1
 You don't need to use this exactly as it is here, though." > "$HOME/Desktop/tools/Redshift"
 
 
-# Master Readme
+#################
+# MASTER README #
+#################
 echo "Make sure to delete these extra files and folders after you are finished with them. 
 You will need to find documentation for all the things this has installed. 
 If you do not want a package that this script has installed, preform the command 
@@ -660,7 +711,9 @@ And always refer to your OS as GNU/Linux unless referring to the kernel itself!
 
 Thanks again for using my script!" > "$HOME/Desktop/README"
 
-# GPG Docs
+############
+# GPG Doc  #
+############
 echo "This is the documentation for GPG. GPG (full name GNPGP) is a free/Libre version of the PGP encryption
 algorithm. Commonly used for email, it can also be used to encrypt files. 
 
@@ -728,7 +781,9 @@ Thank you for reading this tutorial.
 
 Don't be a Hillary. Use PGP." > "$HOME/Desktop/anon/GPG"
 
-# Iceweasel downloads
+#######################
+# Iceweasel downloads #
+#######################
 mkdir "$HOME/Desktop/iceweasel-plugins"
 echo "These are for your Iceweasel installation. Please add them using the add-on's menu.
 Please. 
@@ -741,14 +796,18 @@ wget https://mega.nz/meganz.xpi -O "$HOME/Desktop/iceweasel-plugins/mega.xpi"
 apt-get install -y xul-ext-https-finder
 apt-get install -y xul-ext-https-everywhere
 
-# LXDE startup modifier
+#########################
+# LXDE startup modifier #
+#########################
 mkdir "$HOME/Desktop/startup"
 mkdir "$HOME/Music/.startup"
 wget http://www.windows93.net/c/sys/boot/boot.ogg -O "$HOME/Music/.startup/startup.ogg"
 
-# The reason that an amixer command is in this file is because an odd error occurred where when
-# I started my computer, sound would be muted. Feel free to remove it if you wish. I do not know if 
-# it is just due to my hardware, or something else. This command fixes it for me though.
+#####################################################################################################
+# The reason that an amixer command is in this file is because an odd error occurred where when     #
+# I started my computer, sound would be muted. Feel free to remove it if you wish. I do not know if # 
+# it is just due to my hardware, or something else. This command fixes it for me though.            #
+#####################################################################################################
 
 echo "
 @amixer sset Master unmute
@@ -765,8 +824,9 @@ and remove it from your ~/.config/lxsession/LXDE/auotstart file
 
 NOTE: I AM NOT AFFILIATED WITH THE WINDOWS 93 JOKE SITE" > "$HOME/Desktop/startup/README"
 
-
-# Make desktop defaults, design, background
+#############################################
+# Make desktop defaults, design, background #
+#############################################
 echo '[Session]
 window_manager=openbox-lxde
 windows_manager/command=openbox
@@ -990,8 +1050,13 @@ Plugin {
 }
  ' > "$HOME/.config/lxpanel/LXDE/panels/panel"
 
-# Desktop Icons
-#Hexchat
+#################
+# Desktop Icons #
+#################
+
+###########
+# Hexchat #
+###########
 echo '[Desktop Entry]
 Name=HexChat
 Name[en_GB]=HexChat
@@ -1012,7 +1077,9 @@ Name=Open Safe Mode
 Name[en_GB]=Open Safe Mode
 Exec=hexchat --no-auto --no-plugins' > "$HOME/Desktop/hexchat.desktop"
 
-# Keepass
+###########
+# Keepass #
+###########
 echo '[Desktop Entry]
 Name=KeePass2
 GenericName=Password manager
@@ -1024,7 +1091,9 @@ StartupNotify=false
 Categories=Utility;
 MimeType=application/x-keepass2;' > "$HOME/Desktop/Keepass.desktop"
 
-#Iceweasel
+#############
+# Iceweasel #
+#############
 echo '
 [Desktop Entry]
 Encoding=UTF-8
@@ -1042,7 +1111,9 @@ MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vn
 StartupWMClass=Iceweasel
 StartupNotify=true' > "$HOME/Desktop/Iceweasel.desktop"
 
-#VLC
+#######
+# VLC #
+#######
 echo '[Desktop Entry]
 Version=1.0
 Name=VLC media player
@@ -1054,7 +1125,9 @@ Icon=vlc
 Terminal=false
 Type=Application' > "$HOME/Desktop/vlc.desktop"
 
-#qtox
+########
+# qtox #
+########
 echo '[Desktop Entry]
 Name=qTox
 GenericName=Tox
@@ -1064,7 +1137,9 @@ Terminal=false
 Type=Application
 StartupNotify=false' > "$HOME/Desktop/qTox.desktop"
 
-#Tor
+#######
+# Tor #
+#######
 echo '[Desktop Entry]
 Name=Tor
 GenericName=Tor, the Onion Browser
@@ -1074,7 +1149,9 @@ Terminal=false
 Type=Application
 StartupNotify=false' > "$HOME/Desktop/tor.desktop"
 
-#Evolution
+#############
+# Evolution #
+#############
 echo '[Desktop Entry]
 Name=Evolution
 GenericName=Groupware Suite
@@ -1089,7 +1166,9 @@ StartupNotify=true
 MimeType=text/calendar;text/x-vcard;text/directory;application/mbox;message/rfc822;x-scheme-handler/mailto;
 ' > "$HOME/Desktop/evolution.desktop"
 
-# Desktop background
+######################
+# Desktop background #
+######################
 mkdir "$HOME/Pictures/.wallpaper"
 wget http://choco.neocities.org/Pics/background1.jpg -O "$HOME/Pictures/.wallpaper/Blue-Ripple.jpg"
 wget http://choco.neocities.org/Pics/background2.jpg -O "$HOME/Pictures/.wallpaper/4Chin1.jpg"
@@ -1121,7 +1200,9 @@ show_mounts=0
 x=1349
 y=791" > "$HOME/.config/pcmanfm/LXDE/desktop-items-0.conf"
 
-# Final steps
+###############
+# Final steps #
+###############
 apt-get update
 apt-get upgrade -y
 apt-get dist-upgrade -y
@@ -1137,7 +1218,9 @@ update-menus
 # Sometimes when LightDM is installed, that file becomes corrupted. 
 mv "$HOME/.Xauthority $HOME/.Xauthority.old"
 
-# End
+#######
+# End #
+#######
 clear
 echo " "
 echo "The script has finished"
