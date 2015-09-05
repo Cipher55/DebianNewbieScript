@@ -333,9 +333,9 @@ apt-get install -y wget
 apt-get install -y ntp
 apt-get install -y htop
 
-################################################################################
-# Information to hange ftp to http now that apt-transport-http(s) is installed #
-################################################################################
+#################################################################################
+# Information to change ftp to http now that apt-transport-http(s) is installed #
+#################################################################################
 echo "
 I highly reccomend you put these into your sources.list folder. Do this by doing
 sudo nano /etc/apt/sources.list
@@ -452,7 +452,6 @@ apt-get install -y screenfetch
 apt-get install -y shutter
 apt-get install -y deluge
 apt-get install -y synaptic
-
 ##########################################################################
 # Gnash is wget due to it not being in the repo for jessie. Adding the   #
 # backported repo would cause too many problems for a n00b               #
@@ -552,7 +551,9 @@ apt-get install -y lame
 apt-get install -y sox
 apt-get install -y vorbis-tools
 
-# remove some other packages that (may) come pre-bundled
+##########################################################
+# remove some other packages that (may) come pre-bundled #
+##########################################################
 apt-get remove --purge -y clipit
 apt-get remove --purge -y dillo
 apt-get remove --purge -y konqureor
