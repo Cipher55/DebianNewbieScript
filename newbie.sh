@@ -26,7 +26,7 @@
 # This script adds a number of privacy features. It also removes all other Desktop Environments, and installs a 
 # light-weight one called LXDE, which is much like the older Windows' Interface, so is good for newbies.
 
-# YOU MUST, I repeat, MUST RUN THIS SCRIPT BY DOING 
+# YOU MUST RUN THIS SCRIPT BY DOING 
 # su -m -p -c ./newbie.sh
 # OTHERWISE, THE SCRIPT WILL FAIL, AND QUITE POSSIBLY BREAK YOUR COMPUTER
 
@@ -624,9 +624,10 @@ I suggest putting all backgrounds in this folder. To remove more wallpapers, do
 
 sudo rm -f $HOME/Pictures/.wallpaper/[wallpaper name here]
 
-I do not know who to credit for the wallpaper except for the LAIN, clip-clop, and the 2 GNU ones. 
+I do not know who to credit for the wallpaper except for the LAIN, clip-clop, the 2 GNU ones, and Vinyl. 
 Credit goes to 
-http://fauux.neocities.org/, Pokehidden and https://gnu.org/graphics
+http://fauux.neocities.org/, Pokehidden, https://gnu.org/graphics and
+https://absentparachute.deviantart.com/art/Vinyl-Scratch-Dj-PoN-3-Wallpaper-288095937
 
 http://gnu.org/graphics is also where a large number of ASCII art in the script came from. The rest
 came from an ASCII Art generator. I do not remember where Mario came from.
@@ -1117,7 +1118,7 @@ show_mounts=0
 
 [trash:///]
 x=1349
-y=791" > '$HOME/.config/pcmanfm/LXDE/desktop-items-0.conf"
+y=791" > "$HOME/.config/pcmanfm/LXDE/desktop-items-0.conf"
 
 # Final steps
 apt-get update
