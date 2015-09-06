@@ -513,9 +513,9 @@ are some tips:
 
 * Set your passwords to expire in a few months
 
-* Don't use the same password for everything
+* Do not use the same password for everything
 
-* Don't use something like CandyCru$h69 as a password
+* Do not use something like CandyCru$h69 as a password
 
 * Change every password at the same time
 
