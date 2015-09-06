@@ -1317,14 +1317,14 @@ MimeType=text/calendar;text/x-vcard;text/directory;application/mbox;message/rfc8
 # Desktop background #
 ######################
 mkdir "$HOME/Pictures/.wallpaper"
-wget http://choco.neocities.org/Pics/background1.jpg -O "$HOME/Pictures/.wallpaper/Blue-Ripple.jpg"
-wget http://choco.neocities.org/Pics/background2.jpg -O "$HOME/Pictures/.wallpaper/4Chin1.jpg"
-wget http://choco.neocities.org/Pics/background3.jpg -O "$HOME/Pictures/.wallpaper/4Chin2.jpg"
-wget http://choco.neocities.org/Pics/background4.jpg -O "$HOME/Pictures/.wallpaper/Vinyl.jpg"
-wget http://choco.neocities.org/Pics/background5.png -O "$HOME/Pictures/.wallpaper/LAIN.png"
-wget http://choco.neocities.org/Pics/background6.jpeg -O "$HOME/Pictures/.wallpaper/Oh-Noes.jpeg"
-wget http://choco.neocities.org/Pics/background7.jpg -O "$HOME/Pictures/.wallpaper/Dino.jpg"
-wget http://www.pokehidden.net/banned_from_equestria_daily/wallpaper.jpg -O "$HOME/Pictures/.wallpaper/Clip-Clop.jpg"
+wget https://choco.neocities.org/Pics/background1.jpg -O "$HOME/Pictures/.wallpaper/Blue Ripple.jpg"
+wget https://choco.neocities.org/Pics/background2.jpg -O "$HOME/Pictures/.wallpaper/4Chin1.jpg"
+wget https://choco.neocities.org/Pics/background3.jpg -O "$HOME/Pictures/.wallpaper/4Chin2.jpg"
+wget https://choco.neocities.org/Pics/background4.jpg -O "$HOME/Pictures/.wallpaper/Vinyl.jpg"
+wget https://choco.neocities.org/Pics/background5.png -O "$HOME/Pictures/.wallpaper/LAIN.png"
+wget https://choco.neocities.org/Pics/background6.jpeg -O "$HOME/Pictures/.wallpaper/Oh Noes.jpeg"
+wget https://choco.neocities.org/Pics/background7.jpg -O "$HOME/Pictures/.wallpaper/Dino.jpg"
+wget http://www.pokehidden.net/banned_from_equestria_daily/wallpaper.jpg -O "$HOME/Pictures/.wallpaper/Clip Clop.jpg"
 wget https://gnu.org/graphics/gnu-linux-color-wallpaper.png -O "$HOME/Pictures/.wallpaper/GNU+Linux.png"
 wget https://gnu.org/graphics/gnuemacsref.png -O "$HOME/Pictures/.wallpaper/Emacs.png"
 
