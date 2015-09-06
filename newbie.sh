@@ -630,8 +630,22 @@ wget https://wiki.tox.chat/lib/tpl/vector/user/logo.png -O /usr/share/icons/qTox
 ################
 # Shutter Docs #
 ################
-echo "Shutter is a tool much like Snipping Tool for Windows Vista and later.
-Simply open it, click selection, select, and press enter. You have now taken a screenshot." > "$HOME/Dekstop/tools/Shutter"
+mkdir $HOME/Desktop/tools
+echo "
+Shutter is a tool much like Snipping Tool for Windows Vista and later. Using shutter, you can easily make screenshots.
+
+Simply open shutter, click selection, select, and press enter. You have now taken a screenshot. The default save place is
+inside ~/Pictures/. To change this, go to Edit>Prefrences> Find Save, and change the settings as you wish. 
+
+Just like the Snipping tool in Windows, you can edit the screenshots using a built in editor with an easy to use interface.
+
+  Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.
+" > "$HOME/Dekstop/tools/Shutter"
 
 ###################
 # Redshift script #
