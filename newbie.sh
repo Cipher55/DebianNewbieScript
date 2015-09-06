@@ -534,7 +534,7 @@ I hope you use this password manager
 # Bleachbit #
 #############
 apt-get install -y bleachbit
-echo "
+echo '
   ____  _                 _     _     _ _   
  |  _ \| |               | |   | |   (_) |  
  | |_) | | ___  __ _  ___| |__ | |__  _| |_ 
@@ -562,7 +562,7 @@ running Bleachbit. It will cause it to slow down.
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
     A copy of the license is avalible at http://gnu.org/licences.
 
-" > "$HOME/Desktop/anon/Bleachbit"
+' > "$HOME/Desktop/anon/Bleachbit"
 
 
 ########################################
