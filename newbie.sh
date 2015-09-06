@@ -537,8 +537,7 @@ For more information, see: https://geti2p.net/en/download/Debian#Post-install_wo
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the section entitled GNU
-    Free Documentation License.
+    A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/anon/i2p"
 
 #######################
@@ -674,8 +673,7 @@ And remove it from ~/.config/xsession/LXDE/autostart file.
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the section entitled GNU
-    Free Documentation License.
+    A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/tools/Redshift"
 
 
@@ -748,8 +746,7 @@ Thanks again for using my script!
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the section entitled GNU
-    Free Documentation License.
+    A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/README"
 
 ############
@@ -813,8 +810,7 @@ Don't be a Hillary. Use PGP.
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the section entitled GNU
-    Free Documentation License.
+    A copy of the license is avalible at http://gnu.org/licences.
 
 " > "$HOME/Desktop/anon/GPG"
 
@@ -834,8 +830,7 @@ https://github.com/CrisBRM/user.js
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the section entitled GNU
-    Free Documentation License.
+    A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/iceweasel-plugins/README"
 
 wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O shumway.xpi
