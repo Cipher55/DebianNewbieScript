@@ -232,7 +232,7 @@ clear
 ####################
 echo "Here is a needed disclaimer:"
 echo " "
-echo "Please remember this is a beta version. Thismeans it may break your system"
+echo "Please remember this is a beta version. This means it has the potential to break your system"
 echo " "
 echo "You will have to MANUALLY UNDO any changes from this point on!"
 echo " "
@@ -245,7 +245,7 @@ echo "ANY OTHER COMMAND WILL BREAK IT. IF YOU ENCOUNTER AN ERROR WITH THIS, PREF
 echo "su -m -p"
 echo "THEN PREFORM THE SCRIPT. IT MUST HAVE THOSE ARGS, -m -p!"
 echo " "
-echo "YOU MUST ALSO HAVE THIS RUNNING IN A VIRTUAL CONSOLE. IF YOU DON'T"
+echo "YOU MUST ALSO HAVE THIS RUNNING IN A VIRTUAL CONSOLE. IF YOU DO NOT"
 echo "YOU WILL BE UNABLE TO RUN THIS SCRIPT PROPERLY. ABORT THIS SCRIPT NOW"
 echo "AND PRESS CTRL + ALT + F1 TO SWITCH TO A VIRTUAL CONSOLE!"
 echo " "
@@ -280,7 +280,7 @@ echo "This begins the automated portion of this script. If you wish to quit, pre
 echo "su -c killall newbie.sh"
 echo "In a separate terminal. You will have to manually undo anything past this point."
 echo " "
-echo "Some packages may require additional verification. Please don't go to far away"
+echo "Some packages may require additional verification. Please do not go to far away"
 echo "From your terminal"
 echo " "
 
@@ -296,7 +296,7 @@ echo "
 # or aptitude update. To use non-free packages, add the words contrib non-free to the
 # ends of these lines. It is highly recommended that you DO NOT USE NON-FREE PACKAGES.
 # These non-free packages contradict the entire GNU Philosophy and are only included for 
-# the sake of users who wish to use them. Please don't.
+# the sake of users who wish to use them. Please do not.
 
 # The MAIN Debian Repo
 deb ftp://ftp.debian.org/debian/ jessie main
@@ -349,7 +349,7 @@ echo "
 # or aptitude update. To use non-free packages, add the words contrib non-free to the
 # ends of these lines. It is highly recommended that you DO NOT USE NON-FREE PACKAGES.
 # These non-free packages contradict the entire GNU Philosophy and are only included for 
-# the sake of users who wish to use them. Please don't.
+# the sake of users who wish to use them. Please do not.
 
 # The MAIN Debian Repo
 deb http://httpredir.debian.org/debian/ jessie main
@@ -465,6 +465,9 @@ apt-get install -y synaptic
 ##########################################################################
 wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash.deb
 wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash-common_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-common.deb
+##########################################
+# This is the Gnash plugin for Iceweasel #
+##########################################
 wget http://httpredir.debian.org/debian/pool/main/g/gnash/browser-plugin-gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-plugin.deb
 dpkg -i /tmp/gnash.deb
 dpkg -i /tmp/gnash-common.deb
@@ -512,20 +515,20 @@ regular W3.
 
 Just because tor is secure does not mean it is unpenertable. There are a number of guidelines that the Tor devs suggest.
 
-* Don't log into accounts bearing your real name while on Tor
+* Do not log into accounts bearing your real name while on Tor
 
-* Don't Torrent through the Tor network
+* Do not Torrent through the Tor network
 
-* Don't have a connection open before starting the Tor relay
+* Do not have a connection open before starting the Tor relay
 
-* Don't use email front-ends in the tor browser (i.e. Don't use Gmail from gmail.com)
+* Do not use email front-ends in the tor browser (i.e. Do not use Gmail from gmail.com)
 
-* Don't frequently visit sites you visit normally. Switch it up
+* Do not frequently visit sites you visit normally. Switch it up
 
 * Whenever possible, use .onion addresses. If a service (such as 8ch.net or duckduckgo) has an 
   .onion service, use that instead
 
-* Don't install additional add-ons to the Tor Browser
+* Do not install additional add-ons to the Tor Browser
 
 I hope you use this, and I hope you use this properly!
 
@@ -557,7 +560,7 @@ apt-get upgrade -y
 apt-get dist-upgrade -y
 apt-get install -y --force-yes i2p
 apt-get install -y --force-yes i2p-keyring
-echo "The I2P Network is much like tor, only it's a different network and runs on Java.
+echo "The I2P Network is much like tor, only it is a different network and runs on Java.
 
 Use this as an alternative to tor if you wish. If you want to remove, preform:
 
@@ -626,11 +629,53 @@ apt-get dist-upgrade -y
 apt-get install -y --force-yes qtox
 mkdir /usr/share/icons/qTox
 wget https://wiki.tox.chat/lib/tpl/vector/user/logo.png -O /usr/share/icons/qTox/qTox.png
+echo "
+  ______          
+ /_  __/___  _  __
+  / / / __ \| |/_/
+ / / / /_/ />  <  
+/_/  \____/_/|_|  
+                 
+Tox is an experimental replacement to Skype. Using an encrypted 
+end to end P2P network, with a decentralized system, Tox provides
+safe, encrypted messages back and forth. Tox can be integrated with
+Tor as well, for more security.
+
+The Tox service itself has many implimentations. Of these are qTox
+(which this script installs), uTox, a lighter-weight qTox, and Toxic,
+a terminal-based implimentation.
+
+Because Tox is decentralized, a random key is generated for each user.
+This key is completly random, and is hard to remember. To aid in this,
+the Tox People have provided a service. At toxme.io, you can enter your
+Tox ID and have it assigned to an email-looking address. For example:
+
+My Tox ID is B28EEFF6E84E2A360FF62233F390CF6E994FC71CC3ECFD8F9AA799CA66A97B3C38B0ECAC24EF
+
+Using the Toxme.io service, my Tox ID is: chocolate_chip@toxme.io
+
+Simple, right? Anyone can send you a friend request if they have your ID. 
+Tox is just like Skype with the excweption it runs fast, it is not malware,
+it is not spyware, and it is actually useable.
+
+To remove tox, prefom the command
+sudo apt-get remove --purge qtox
+sudo rm /etc/apt/sources.list.d/tox.list
+
+  Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.
+
+" > "$HOME/Desktop/anon/Tox"
+
 
 ################
 # Shutter Docs #
 ################
-mkdir $HOME/Desktop/tools
+mkdir "$HOME/Desktop/tools"
 echo "
 Shutter is a tool much like Snipping Tool for Windows Vista and later. Using shutter, you can easily make screenshots.
 
@@ -689,7 +734,7 @@ gamma=0.8
 ;gamma-day=0.8:0.7:0.8
 ;gamma-night=0.6
 
-; Set the location-provider: 'geoclue', 'geoclue2', 'manual'
+; Set the location-provider: geoclue, geoclue2, manual
 ; type 'redshift -l list' to see possible values.
 ; The location provider settings are in a different section.
 location-provider=manual
@@ -857,20 +902,23 @@ Cash Donations: P.O. Box comming soon
 # GPG Doc  #
 ############
 echo "
- ___ _____ _____ _____ _____                                
-|   __|   | |  |  |   __|  _  |                               
-|  |  | | | |  |  |  |  |   __|                               
-|_____|_|_________|_____|__|  _ __    _ _                     
-|  _  |  |   __|___ ___ ___  / |  |  |_| |_ ___ ___           
-|     |  |   __|  _| -_| -_|/ /|  |__| | . |  _| -_|          
-|_____|_____|_____ |_______|_/ |_____|_|___|_| |___|_         
-|  _  |   __|  _  |  |   __|___ ___ ___ _ _ ___| |_|_|___ ___ 
-|   __|  |  |   __|  |   __|   |  _|  _| | | . |  _| | . |   |
-|_____|_____|__|     |_____|_|_|___|_| |_  |  _|_| |_|___|_|_|
-|   __|_ _|_| |_ ___                   |___|_|                
-|__   | | | |  _| -_|                                         
-|_____|___|_|_| |___|                                         
-                                                                                                                                      
+   _______   ____  ____________                                            
+  / ____/ | / / / / / ____/ __ \                                           
+ / / __/  |/ / / / / / __/ /_/ /                                           
+/ /_/ / /|  / /_/ / /_/ / ____/                                            
+\______/ |_/\__________/_/            ____    _ __                         
+   /   |     / ____/_______  ___    _/_/ /   (_) /_  ________              
+  / /| |    / /_  / ___/ _ \/ _ \ _/_// /   / / __ \/ ___/ _ \             
+ / ___ |   / __/ / /  /  __/  __//_/ / /___/ / /_/ / /  /  __/             
+/_/ ____  __________  \________/_/  /_____/_/_.___/_/   \____  _           
+   / __ \/ ____/ __ \   / ____/___  ____________  ______  / /_(_)___  ____ 
+  / /_/ / / __/ /_/ /  / __/ / __ \/ ___/ ___/ / / / __ \/ __/ / __ \/ __ \
+ / ____/ /_/ / ____/  / /___/ / / / /__/ /  / /_/ / /_/ / /_/ / /_/ / / / /
+/_/_________/_/_ __  /_____/_/ /_/\___/_/   \__, / .___/\__/_/\____/_/ /_/ 
+  / ___/__  __(_) /____                    /____/_/                        
+  \__ \/ / / / / __/ _ \                                                   
+ ___/ / /_/ / / /_/  __/                                                   
+/____/\__,_/_/\__/\___/                                                                                                                    
                                                                                                                       
 
 This is the documentation for GPG. GPG (full name GNUPG) is a free/Libre version of the PGP encryption
@@ -968,13 +1016,28 @@ echo "
    / /\ \   |  _|  __/ _ \/ _ \______/ _ \  __| |  __| | |  __/ _ \  _/ _ \ \/ /
   / ____ \  | | | | |  __/  __/     |  __/ |    | |    | | | |  __/ || (_) >  < 
  /_/    \_\ |_| |_|  \___|\___|      \___|_|    |_|    |_|_|  \___|_| \___/_/\_\
-                                                                                
 
-These are for your Iceweasel installation. Please add them using the add-on's menu. The plugin called Shumway
-is an optional replacment for the gnash browser plugin that this script provides. I highly suggest you don't use it. It is
-very broken, not yet good for n00bs, laggy, etc. However, once the plugin is fixed, I suggest using it over gnash. Both are only
-for swf files. These are not for other flash formats, such as flv. Also, I suggest adding this: 
-https://github.com/CrisBRM/user.js
+Iceweasel is a Debian fork of Firefox. While not an exact clone, it keeps true and up
+to date on the Official Firefox code. Iceweasel removes a number of features in the 
+official Firefox, for the better. It removes DRM, many Phone-Home features, and some 
+other needless features. Iceweasel is fast as well.
+
+Contained in this folder are for your Iceweasel installation. Please add them using 
+the add-on menu. The plugin called Shumway is an optional replacment for the gnash 
+browser plugin that this script provides. I highly suggest you do not use it. It is
+very broken, not yet good for n00bs, laggy, etc. However, once the plugin is fixed, 
+I suggest using it over gnash. Both are only for swf files. These are not for other 
+flash formats, such as flv. Also, I suggest using https://github.com/CrisBRM/user.js
+
+Once you become a more advance user, I suggest switching over to GNU Icecat. Icecat
+is another firefox fork made by the GNU Foundation themselves. Be forewarned: it is
+kinda slow, and buggy. Iceweasel is just fine for a n00b. 
+
+There are no major differences in useability for Iceweasel and any other browsers
+you have most likley used, with the exception it is possibly faster, it is not yet
+at the same HTML5 support level as Google Chrome, and does not have full Adobe Flash
+support (though Flash is kill, evil, and created a downfall of the internet circa 
+2001.)
 
     Copyright (C)  2015  Chocolate Chip Computing
     Permission is granted to copy, distribute and/or modify this document
@@ -984,7 +1047,7 @@ https://github.com/CrisBRM/user.js
     A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/iceweasel-plugins/README"
 
-wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O $HOME/Desktop/iceweasel-plugins/shumway.xpi
+wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O "$HOME/Desktop/iceweasel-plugins/shumway.xpi"
 wget https://addons.mozilla.org/firefox/downloads/latest/6623/addon-6623-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/privacy.xpi"
 wget https://addons.mozilla.org/firefox/downloads/latest/607454/addon-607454-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/uBlock-Origin.xpi"
 wget https://mega.nz/meganz.xpi -O "$HOME/Desktop/iceweasel-plugins/mega.xpi"
@@ -1058,7 +1121,7 @@ with local saved files.
 I also added a few more things to the ~/.config/lxsession/LXDE/auotstart file. If
 you want to remove any program from starting up, go there. The @ means any thing 
 that can be run with a simple comamnd. Anything else that can't be run using a simple 
-comamnd is a bit more dificult. You shouldn't add anything there that can't be run as
+comamnd is a bit more dificult. You shouldn't add anything there that can not be run as
 a simple command. It would be to hard for a n00b.
 
   Copyright (C)  2015  Chocolate Chip Computing.
