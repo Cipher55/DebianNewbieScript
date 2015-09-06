@@ -13,7 +13,7 @@
 #                      /_/                      /____/  
 
 
-# Debian Newbie Script v0.3.3 beta
+# Debian Newbie Script v0.3.4 beta
 # This script is designed to rice and optimize a Debian install, and install new, better components on first run. 
 # This script is designed for the latest stable release, Debian GNU/Linux 8.* Jessie. This includes i386 bit 
 # packages, to ensure it works on both 32 and 64 bit systems. All apt packages will obviously be tailored
@@ -157,7 +157,7 @@ fi
 # License Script #
 ##################
 echo "
-Debian Newbie Script v0.3.3 beta  Copyright (C) 2015  Chocolate Chip Computing
+Debian Newbie Script v0.3.4 beta  Copyright (C) 2015  Chocolate Chip Computing
 This program comes with ABSOLUTELY NO WARRANTY; for details type d.
 This is free software, and you are welcome to redistribute it
 under certain conditions; type c to continue, or d for details, [C/d]
@@ -166,7 +166,7 @@ read -rn1 ans
 
 if [ "${ans:0:1}" = "D" ] || [ "${ans:0:1}" = "d" ]; then
   echo "
-    Debian Newbie Script v0.3.3 beta: A script to optimize a fresh install for Debian Newbies
+    Debian Newbie Script v0.3.4 beta: A script to optimize a fresh install for Debian Newbies
     Copyright (C) 2015 Chocolate Chip Computing
 
     This program is free software: you can redistribute it and/or modify
@@ -200,9 +200,6 @@ if [ "${ans:0:1}" = "C" ] || [ "${ans:0:1}" = "c" ]; then
 "
   echo "Now Continuing..."
 fi
-
-clear
-echo "Now continuing..."
 
 ####################
 # Confirm Script 1 #
@@ -249,6 +246,11 @@ echo "YOU MUST ALSO HAVE THIS RUNNING IN A VIRTUAL CONSOLE. IF YOU DO NOT"
 echo "YOU WILL BE UNABLE TO RUN THIS SCRIPT PROPERLY. ABORT THIS SCRIPT NOW"
 echo "AND PRESS CTRL + ALT + F1 TO SWITCH TO A VIRTUAL CONSOLE!"
 echo " "
+echo "Also, this needs to be done. If the statment below does not match your own"
+echo "Home directory (i.e. says /root), DO NOT RUN! You have done something wrong."
+echo " "
+echo "$HOME"
+echo " "
 echo "This will also take a very long time to finish."
 echo "Continue? [Y/n]?"
 read -rn1 ans
@@ -266,8 +268,23 @@ if [ "${ans:0:1}" = "N" ] || [ "${ans:0:1}" = "n" ]; then
   echo "Exiting..."
   sleep 1
   clear
-  echo "Thank you for choosing Chocolate Chip Computing for your new GNU/Linux Experience!"
-  sleep 1
+  echo "Thank you for choosing"
+  echo "
+      ________                     __      __          ________    _          
+     / ____/ /_  ____  _________  / /___ _/ /____     / ____/ /_  (_)___      
+    / /   / __ \/ __ \/ ___/ __ \/ / __  / __/ _ \   / /   / __ \/ / __ \     
+   / /___/ / / / /_/ / /__/ /_/ / / /_/ / /_/  __/  / /___/ / / / / /_/ /     
+   \____/_/ /_/\____/\___/\____/_/\__,_/\__/\___/   \____/_/ /_/_/ .___/      
+      ______                            __  _                   /_/           
+     / ____/___  ____ ___  ____  __  __/ /_(_)___  ____ _                     
+    / /   / __ \/ __  __ \/ __ \/ / / / __/ / __ \/ __  /                     
+   / /___/ /_/ / / / / / / /_/ / /_/ / /_/ / / / / /_/ /                      
+   \____/\____/_/ /_/ /_/ .___/\__,_/\__/_/_/ /_/\__, /                       
+                       /_/                      /____/  
+(assumed buisness name comming soon)
+"
+  echo "for your new GNU/Linux Experience"
+  sleep 4
   clear
   exit 1
 fi
