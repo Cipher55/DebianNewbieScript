@@ -36,8 +36,6 @@
 # Please email all bug reports to the same address.
 # You can also contact me on #Chocolate_Chip on the network irc.canternet.org (please use the SSL Port 6697.)
 
-# The reason that some prompts are listed twice is so if the person presses return, it will do the caps letter
-# option.
 
 #################
 # Start echo(s) #
@@ -154,9 +152,6 @@ if [ "${ans:0:1}" = "Q" ] || [ "${ans:0:1}" = "q" ]; then
   exit 1
 fi
 
-clear
-echo "Continuing..."
-sleep 1
 
 ##################
 # License Script #
@@ -206,12 +201,7 @@ if [ "${ans:0:1}" = "C" ] || [ "${ans:0:1}" = "c" ]; then
 fi
 
 clear
-echo "
-   Very well. The license terms can be viewed at
-   https://gnu.org/licenses
-"
-sleep 2
-echo "Now Continuing..."
+echo "Now continuing..."
 
 ####################
 # Confirm Script 1 #
@@ -264,7 +254,7 @@ read -rn1 ans
 
 if [ "${ans:0:1}" = "Y" ] || [ "${ans:0:1}" = "y" ]; then
   echo " "
-  echo "Now continuing"
+  echo "Now continuing..."
   sleep 1
   clear
 fi
@@ -280,10 +270,6 @@ if [ "${ans:0:1}" = "N" ] || [ "${ans:0:1}" = "n" ]; then
   clear
   exit 1
 fi
-
-echo " "
-echo "Now continuing..."
-sleep 1
 
 ######################
 # Last begin echo(s) #
