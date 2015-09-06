@@ -518,28 +518,27 @@ apt-get dist-upgrade -y
 apt-get install -y --force-yes i2p
 apt-get install -y --force-yes i2p-keyring
 echo "The I2P Network is much like tor, only it's a different network and runs on Java.
+
 Use this as an alternative to tor if you wish. If you want to remove, preform:
+
 rm /etc/apt/sources.list.d/i2p.list
 apt-get remove --purge ip2 ip2-keyring
 
-Instructions taken straight from the i2p website:
-Using these I2P packages the I2P router can be started in the following three ways:
+To use this, preform the command
 
-on demand using the i2prouter script. Simply run i2prouter start from a command prompt. (Note: Do not use sudo or run it as root!)
-on demand without the Java service wrapper (needed on non-Linux/non-x86 systems) by running i2prouter-nowrapper. 
-(Note: Do not use sudo or run it as root!) as a service that automatically runs when your system boots, even before logging in. 
-The service can be enabled with dpkg-reconfigure i2p as root or using sudo. This is the recommended means of operation.
+i2prouter
 
-When installing for the first time, please remember to adjust your NAT/firewall if you can. The ports to forward can be found on the network 
-configuration page in the router console. If guidance with respect to forwarding ports is needed, you may find portforward.com to be helpful.
-
-
-Please review and adjust the bandwidth settings on the configuration page, as the default settings of 96 KB/s down / 40 KB/s up are fairly 
-conservative.
-
-If you want to reach eepsites via your browser, have a look on the browser proxy setup page for an easy howto.
+That should start it!
 
 For more information, see: https://geti2p.net/en/download/Debian#Post-install_work
+
+  Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled GNU
+    Free Documentation License.
 " > "$HOME/Desktop/anon/i2p"
 
 #######################
@@ -598,10 +597,9 @@ Simply open it, click selection, select, and press enter. You have now taken a s
 ###################
 # Redshift script #
 ###################
-echo "Find an example config file at the Redshift website. 
-Also, further instructions will be there as well.
-My own redshift config is:
+echo "These are instructions for using Redshift. Redshift is a software program that allows the computer monitor to adjust its colors based on the time of day it is. Redshift has been said to help eye strain and to aid in people going to sleep on time!
 
+To start, you must make a config file. My own configuration is:
 
 ; Global settings for redshift
 [redshift]
@@ -661,13 +659,32 @@ lon=[omited]
 screen=1
 
 
-You don't need to use this exactly as it is here, though." > "$HOME/Desktop/tools/Redshift"
+You don't need to use this exactly as it is here, though. You notice that it asks for latitude and longitudes. What it needs is a decimal number for your zip code. You can easily find this information on the internet. What I suggest you do is make a folder in ~/.config called Redshift. Then make a file called Redshift.conf. Paste the above example configuration into the new file, and then save. Now, to make redshift use this file, import using the command:
+
+redshift -c ~/.config/Redshift/Redshift.conf
+
+Now whenever redshift starts, it will use that configuration! To remove redshift, do 
+
+sudo apt-get remove –purge redshift gtk-redshift
+
+And remove it from ~/.config/xsession/LXDE/autostart file.
+
+  Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled GNU
+    Free Documentation License.
+" > "$HOME/Desktop/tools/Redshift"
 
 
 #################
 # MASTER README #
 #################
-echo "Make sure to delete these extra files and folders after you are finished with them. 
+echo "If you are reading this, you have successfully installed my script! Good job!
+
+Make sure to delete these extra files and folders after you are finished with them. 
 You will need to find documentation for all the things this has installed. 
 If you do not want a package that this script has installed, preform the command 
 
@@ -678,7 +695,7 @@ Periodically preform the commands
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 
 I have added LXDE to this script as I use it myself, it is much like the old Windows interface, 
-and it is just good for beginners, imho. You can pick another one once you know what youre doing, I guess.
+and it is just good for beginners, in my humble opinion. You can pick another one once you know what you are doing, I guess.
 
 To configure your network, use the command nmtui. This is the network-manager terminal interface.
 
@@ -692,8 +709,8 @@ I suggest putting all backgrounds in this folder. To remove more wallpapers, do
 sudo rm -f $HOME/Pictures/.wallpaper/[wallpaper name here]
 
 I do not know who to credit for the wallpaper except for the LAIN, clip-clop, the 2 GNU ones, and Vinyl. 
-Credit goes to 
-http://fauux.neocities.org/, Pokehidden, https://gnu.org/graphics and
+
+Credit goes to http://fauux.neocities.org/, Pokehidden, https://gnu.org/graphics and
 https://absentparachute.deviantart.com/art/Vinyl-Scratch-Dj-PoN-3-Wallpaper-288095937
 
 http://gnu.org/graphics is also where a large number of ASCII art in the script came from. The rest
@@ -724,7 +741,16 @@ https://stallman.org/facebook.html
 
 And always refer to your OS as GNU/Linux unless referring to the kernel itself!
 
-Thanks again for using my script!" > "$HOME/Desktop/README"
+Thanks again for using my script!
+
+  Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled GNU
+    Free Documentation License.
+" > "$HOME/Desktop/README"
 
 ############
 # GPG Doc  #
@@ -736,65 +762,61 @@ To use PGP, you must first create a key. To do this, preform the command
 
 gpg --gen-key
 
-This will begin the process. It is recommended you make your key the maximum amount of characters the program allows.
-It will ask you a few questions that you should answer honestly. There is little to no point not to. An example:
-Expire: 3 Months
+This will begin the process. It is recommended you make your key the maximum amount of characters the program allows. It will ask you a few questions that you should answer honestly. There is little to no point not to. An example:
+
+Expire: 3m
 Full name: Dustin M. Shappee
 email: chocolatechip@derpymail.org
 comment: Chocolate D. Chip
 pass-phrase: [secret pass-phrase here]
 
-Using this, I have configured a key to be valid for 3 months, to be registered as my real name (and my online alias)
-and have configured a secret password (I recommend getting one from http://securepasswordgenerator.com).
+Using this, I have configured a key to be valid for 3 months, to be registered as my real name (and my online alias) and have configured a secret password (I recommend getting one from http://securepasswordgenerator.com).
 
 The signature looks something like this:
 
 Dustin M. Shappee (ChocolateChip@derpymail.org) <chocolatechip@derpymail.org>
 PUB: 246810 SIG: 1357911 created: 09-10-15 NextCheck: 11-10-15
 
-After you enter this information, will generate the key. It might seem odd that it asks you to move the mouse and type random keys, 
-but it is all for the sake of generating random numbers for your key.
+After you enter this information, will generate the key. It might seem odd that it asks you to move the mouse and type random keys, but it is all for the sake of generating random numbers for your key.
 
 Now, after that has finished, to export your key, preform the command
 
 gpg --armor --output pubkey.txt --export [Your Name]
 
-(the --armor part is pretty important because it is what converts your key to text)
-Then give your friends your key so they know it is yours.
+(the --armor part is pretty important because it is what converts your key to text) Then give your friends your key so they know it is yours.
 
-Now, open Evolution. Evolution needs little configuring for PGP.  (but you will need to configure it to use
-your email, obviously.) Preform the command:
+Now, open Evolution. Evolution needs little configuring for PGP.  (but you will need to configure it to use your email, obviously.) Preform the command:
 
 gpg --list-sigs
 
-Find the one you just made, copy the PUB key, and add it to edit > Preferences > (your account) > edit > Security > 
-Open PGP Key ID. Paste the PUB key there. Select the three options below it. It works better if you add 0x to the key.
-For example, 832111 would become 0x83211.
+Find the one you just made, copy the SEC (Secret) key, and add it to edit > Preferences > (your account) > edit > Security > Open PGP Key ID. Paste the PUB key there. Select the three options below it. It works better if you add 0x to the key. For example, A832111 would become 0xA83211.
 
-Then, start composing an email for the account you made an email to. Go to the settings and select PGP Sign. This will
-make your message signed with your PGP Signature. Make the recipient one of your friends. Have him preform the same steps to 
-get a PGP key. Send him a message with your signature signed. Then have him send you a message signed. Then, once you get his 
-signature, import it using 
+Then, start composing an email for the account you made an email to. Go to the settings and select PGP Sign. This will make your message signed with your PGP Signature. Make the recipient one of your friends. Have him preform the same steps to get a PGP key. Send him a message with your signature signed. Then have him send you a message signed. Then, once you get his signature, import it using 
 
 gpg --import
 [paste pgp key]
 then press ctrl + D
 
-Now, go back to your email, and select PGP Encrypt and PGP Sign. Send another email to your friend. This will arrive to him
-encrypted. Now have him reply to the message with another encrypted message. Congratulations, you have sent a PGP Encrypted
-message. 
+Now, go back to your email, and select PGP Encrypt and PGP Sign. Send another email to your friend. This will arrive to him encrypted. Now have him reply to the message with another encrypted message. Congratulations, you have sent a PGP Encrypted message. 
 
 Some tips:
-Encrypt whenever possible. If you only encrypt certain things, the surveillance programs will take extra notice to the ones you
-are encrypting.
+Encrypt whenever possible. If you only encrypt certain things, the surveillance programs will take extra notice to the ones you are encrypting.
 
-Don't automatically trust something just because it has been PGP Signed/Encrypted. Anyone can make a PGP key. People can also
-make fraudulent keys using your email address. That is why it is important to make your keys expire in a short amount of time, 
-and also post your keys to a site your friends can trust.
+Don't automatically trust something just because it has been PGP Signed/Encrypted. Anyone can make a PGP key. People can also make fraudulent keys using your email address. That is why it is important to make your keys expire in a short amount of time, and also post your keys to a site your friends can trust.
 
 Thank you for reading this tutorial. 
 
-Don't be a Hillary. Use PGP." > "$HOME/Desktop/anon/GPG"
+Don't be a Hillary. Use PGP.
+
+    Copyright (C)  2015  Chocolate Chip Computing
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled GNU
+    Free Documentation License.
+
+" > "$HOME/Desktop/anon/GPG"
 
 #######################
 # Iceweasel downloads #
@@ -805,7 +827,16 @@ echo "These are for your Iceweasel installation. Please add them using the add-o
 is an optional replacment for the gnash browser plugin that this script provides. I highly suggest you don't use it. It is
 very broken, not yet good for n00bs, laggy, etc. However, once the plugin is fixed, I suggest using it over gnash. Both are only
 for swf files. These are not for other flash formats, such as flv. Also, I suggest adding this: 
-https://github.com/CrisBRM/user.js" > "$HOME/Desktop/iceweasel-plugins/README"
+https://github.com/CrisBRM/user.js
+
+    Copyright (C)  2015  Chocolate Chip Computing
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled GNU
+    Free Documentation License.
+" > "$HOME/Desktop/iceweasel-plugins/README"
 
 wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O shumway.xpi
 wget https://addons.mozilla.org/firefox/downloads/latest/6623/addon-6623-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/privacy.xpi"
