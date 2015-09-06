@@ -501,37 +501,37 @@ rm /tmp/tor.tar.xz
 mkdir "$HOME/Desktop/anon"
 echo "
                                         .?:..++.                  
-?777777777777777777777777777I          .:.7,~77                     
-77777777777777777777777777777,        ?.I:I7:                    
-77777777777777777777777777777,        III77                     
-77777777777777777777777777777,        7I77I
-77777777777777777777777777777,        777+
-77777777777777777777777777777,     N8~7I:
-77777777777777777777777777777,     ,..,DM
-?$77777$77777777777777$77777?       M.:7M                       I7777777~
-         77777777777I              ID.:Z$M                   77777777777~
-         77777777777I            :M+.,=777M:               =777777777777~
-         77777777777I          ,M8,.,,:.M77$MN            ?7777777777777~
-         77777777777I       NM,....=.,..M7777MM          :77777777777777~
-         77777777777I      =M:....,Z..:M..M77777MN       777777777777777~
-         77777777777I     D8....,N,...~.Z.:7777778M     ,777777777777777~
-         77777777777I    DN....M.....I~,...87777778M    ?77777777777$
-         77777777777I    M,..Z,.....O.:,.~,M7777777M?   ?7777777777I
-         77777777777I   MO..+.....7...:,.,+M7777777$M   ?7777777777=
-         77777777777I   M,..,...$....,~.8.NM77777777M   ?7777777777=
-         77777777777I   M,.....M....,$,..,8M77777777M   ?7777777777=
-         77777777777I   ZM..........M.:..NMM7777777ZM   ?7777777777=
-         77777777777I    M..$,.,......:M,MNM7777777M    ?7777777777=
-         77777777777I    ,M..M.M...$..:M.+.M777777MD    ?7777777777=
-         77777777777I     ,M.,M.$..,..:M.7NZ77777MO     ?7777777777=
-         77777777777I       MN.D,Z..M.:7M~M7777$M       ?7777777777=
-         77777777777I         NM+Z~8.MNMMM$7$MM.        ?7777777777=
-         77777777777            ?MMMMMMMMM$.            ?7777777777=
+77777777777777777777777777777          .:.7,~77                     
+77777777777777777777777777777         ?.I:I7:                    
+77777777777777777777777777777         III77                     
+77777777777777777777777777777         7I77I
+77777777777777777777777777777         777+
+77777777777777777777777777777      N8~7I:
+77777777777777777777777777777      ,..,DM
+77777777777777777777777777777       M.:7M                       77777777
+         77777777777               ID.:Z$M                   77777777777
+         77777777777             :M+.,=777M:                777777777777
+         77777777777           ,M8,.,,:.M77$MN             7777777777777
+         77777777777        NM,....=.,..M7777MM           77777777777777
+         77777777777       =M:....,Z..:M..M77777MN       777777777777777
+         77777777777      D8....,N,...~.Z.:7777778M      777777777777777
+         77777777777     DN....M.....I~,...87777778M     77777777777
+         77777777777     M,..Z,.....O.:,.~,M7777777M?    7777777777
+         77777777777    MO..+.....7...:,.,+M7777777$M    7777777777
+         77777777777    M,..,...$....,~.8.NM77777777M    7777777777
+         77777777777    M,.....M....,$,..,8M77777777M    7777777777
+         77777777777    ZM..........M.:..NMM7777777ZM    7777777777
+         77777777777     M..$,.,......:M,MNM7777777M     7777777777
+         77777777777     ,M..M.M...$..:M.+.M777777MD     7777777777
+         77777777777      ,M.,M.$..,..:M.7NZ77777MO      7777777777
+         77777777777        MN.D,Z..M.:7M~M7777$M        7777777777
+         77777777777          NM+Z~8.MNMMM$7$MM.         7777777777
+         77777777777            ?MMMMMMMMM$.             7777777777
                              
                                                               
 ___________.__             ________         .__               
 \__    ___/|  |__   ____   \_____  \   ____ |__| ____   ____  
-  |    |   |  |  \_/ __ \   /   |   \ /    \|  |/  _ \ /    \ 
+  |    |   |  |  \_/ __ \   /   |   \ /    \|  |/  _ \ /    \
   |    |   |   Y  \  ___/  /    |    \   |  \  (  <_> )   |  \
   |____|   |___|  /\___  > \_______  /___|  /__|\____/|___|  /
                 \/     \/          \/     \/               \/ 
@@ -683,22 +683,22 @@ mkdir /usr/share/icons/qTox
 wget https://wiki.tox.chat/lib/tpl/vector/user/logo.png -O /usr/share/icons/qTox/qTox.png
 echo "
  
-                      ~8MMMM8~                                     
-                  IMMMMMMMMMMMMMM8                                 
-                $MMMMMMMMMMMMMMMMMM8                               
-               MMMMMMMMMMMMMMMMMMMMMM                              
-            7MMMMMMD:        :$MMMMMM$                            
-           ~MMMMMM              ZMMMMM+                           
-          MMMMMM                ,MMMMM                           
-          IMMMMM                  ZMMMM8                          
-          8MMMMI                   MMMMM                          
-          DMMMM                    MMMMM                          
-          NMMMM~                   MMMMM                          
-          NMMMMM                  ?MMMMM                          
-          NMMMMM+                 NMMMMM                          
-          NMMMMMMO               7MMMMMM                          
-         NMMMMMMMM             OMMMMMMM                          
-:MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                 
+                       MMMM                                     
+                  MMMMMMMMMMMMMMM                                 
+                MMMMMMMMMMMMMMMMMMM                               
+              MMMMMMMMMMMMMMMMMMMMMM                              
+             MMMMMM             MMMMM                            
+           MMMMMM                MMMMM                          
+          MMMMMM                  MMMMM                           
+          MMMMM                    MMMMM                         
+          MMMMM                    MMMMM                          
+          MMMMM                     MMMM                         
+          MMMMM                     MMMM                          
+          MMMMMM                   MMMMM                          
+          MMMMMMM                 MMMMMM                          
+          NMMMMMMM               MMMMMMM                          
+          MMMMMMMMM            MMMMMMMMM                          
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                 
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
@@ -721,12 +721,6 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    / / / __ \| |/_/
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   / / / /_/ />  <              
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  /_/  \____/_/|_|              
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
-                
-                               
-                               
-                                
-                                
-                                
                  
 Tox is an experimental replacement to Skype. Using an encrypted 
 end to end P2P network, with a decentralized system, Tox provides
