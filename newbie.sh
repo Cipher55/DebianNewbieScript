@@ -1361,7 +1361,7 @@ update-menus
 # Keep this in please!                                              #
 # Sometimes when LightDM is installed, that file becomes corrupted. #
 #####################################################################
-mv "$HOME/.Xauthority $HOME/.Xauthority.old"
+mv "$HOME/.Xauthority" "$HOME/.Xauthority.old"
 
 #######
 # End #
