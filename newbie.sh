@@ -366,7 +366,7 @@ deb http://httpredir.debian.org/debian/ jessie-updates main
 deb-src http://httpredir.debian.org/debian/ jessie-updates main
 
 
- " > /etc/apt/sources.list
+" > /etc/apt/sources.list
 
 apt-get update
 apt-get -y upgrade
@@ -465,8 +465,8 @@ apt-get install -y synaptic
 # Gnash is wget due to it not being in the repo for jessie. Adding the   #
 # backported repo would cause too many problems for a n00b               #
 ##########################################################################
-wget http://http.us.debian.org/Debian/pool/main/g/gnash/gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash.deb
-wget http://http.us.debian.org/Debian/pool/main/g/gnash/gnash-common_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-common.deb
+wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash.deb
+wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash-common_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-common.deb
 dpkg -i /tmp/gnash.deb
 dpkg -i /tmp/gnash-common.deb
 apt-get -f -y install
@@ -569,6 +569,8 @@ apt-get remove --purge -y konqureor
 apt-get remove --purge -y kmail
 apt-get remove --purge -y konsole
 apt-get remove --purge -y deluge
+apt-get remove --purge -y vim
+apt-get remove --purge -y vim-common
 
 ########################################
 # qTox, the skype replacement's script #
