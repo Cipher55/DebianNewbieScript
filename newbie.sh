@@ -13,7 +13,7 @@
 #                      /_/                      /____/  
 
 
-# Debian Newbie Script v0.3.2 beta
+# Debian Newbie Script v0.3.3 beta
 # This script is designed to partially rice a Debian install, and install new, better components on first run. 
 # This script is designed for the latest stable release, Debian GNU/Linux 8.* Jessie. This includes i386 bit 
 # packages, to ensure it works on both 32 and 64 bit systems. All apt packages will obviously be tailored
@@ -157,7 +157,7 @@ fi
 # License Script #
 ##################
 echo "
-Debian Newbie Script v0.3.2 beta  Copyright (C) 2015  Chocolate Chip Computing
+Debian Newbie Script v0.3.3 beta  Copyright (C) 2015  Chocolate Chip Computing
 This program comes with ABSOLUTELY NO WARRANTY; for details type d.
 This is free software, and you are welcome to redistribute it
 under certain conditions; type c to continue, or d for details, [C/d]
@@ -166,7 +166,7 @@ read -rn1 ans
 
 if [ "${ans:0:1}" = "D" ] || [ "${ans:0:1}" = "d" ]; then
   echo "
-    Debian Newbie Script v0.3.2 beta: A script to optimize a fresh install for Debian Newbies
+    Debian Newbie Script v0.3.3 beta: A script to optimize a fresh install for Debian Newbies
     Copyright (C) 2015 Chocolate Chip Computing
 
     This program is free software: you can redistribute it and/or modify
@@ -496,11 +496,53 @@ wget https://www.torproject.org/dist/torbrowser/5.0.2/tor-browser-linux32-5.0.2_
 tar xvf /tmp/tor.tar.xz -C /opt/tor
 rm /tmp/tor.tar.xz
 mkdir "$HOME/Desktop/anon"
-echo "This is the Tor Browser.
+echo "
+This is the Tor Browser. The Tor browser uses a system of relays named The Onion Network Router. It is designed to 
+anonize users. Through an elaborate system, it takes your browser session, routs it through Russia, routes that 
+through Germany, roughts that through Scandanavia, routes that back through Russia, and then to the end result. 
+
+Using tor, there are a number of websits that can only be accessed through an extention called .onion.
+.onion is like .com, but can only be viewed through the tor network. The Tor goals are to allow countries with
+government censorship (like North Korea) to access blocked sites. It also is designed to aid in Governemnt Srevalance systems
+to not find browser traffic. 
+
+Tor has been in the news (where they refer to it as the Deep Web) for hosting many illegal activities, such as the now-defunct 
+Silk Road Black Market. Just because Tor hosts illegal things does not make it illegal itself. The same could be said for the 
+regular W3.
+
+Just because tor is secure does not mean it is unpenertable. There are a number of guidelines that the Tor devs suggest.
+
+* Don't log into accounts bearing your real name while on Tor
+
+* Don't Torrent through the Tor network
+
+* Don't have a connection open before starting the Tor relay
+
+* Don't use email front-ends in the tor browser (i.e. Don't use Gmail from gmail.com)
+
+* Don't frequently visit sites you visit normally. Switch it up
+
+* Whenever possible, use .onion addresses. If a service (such as 8ch.net or duckduckgo) has an 
+  .onion service, use that instead
+
+* Don't install additional add-ons to the Tor Browser
+
+I hope you use this, and I hope you use this properly!
+
 To configure it, simply double click the tor icon, wait a few moments, and it will open.
 If you wish to remove tor, preform the commands:
+
 apt-get remove --purge tor
-rm -r -f /opt/tor" > "$HOME/Desktop/anon"
+rm -r -f /opt/tor
+
+  Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.
+
+" > "$HOME/Desktop/anon/tor"
 
 ##############
 # I2P Script #
