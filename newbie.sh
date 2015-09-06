@@ -685,11 +685,43 @@ Using the Toxme.io service, my Tox ID is: chocolate_chip@toxme.io
 
 Simple, right? Anyone can send you a friend request if they have your ID. 
 Tox is just like Skype with the excweption it runs fast, it is not malware,
-it is not spyware, and it is actually useable.
+it is not spyware, and it is actually useable. 
 
-To remove tox, prefom the command
+A problem that exists because it is decentralized, however, is that you need
+to back up your tox database. If for whatever reason you need to reinstall your 
+system, or need to do whatever, there is no way to get back your account (unless
+you still have your toxme.io password. Then you can change the Tox ID assosiated
+with your account and then boom! You are done.
+
+A friend of mine, under the online alias Candy Gumdrop (fellow furry/brony) 
+is a co-developer of uTox. Boy, is he mad that I use qTox. I feel that I should
+include some of his points to be fair. 
+
+Reasons to choose uTox over qTox:
+
+* Lightweight and memory efficient
+
+* Tab completion
+
+* QT-type style themes
+
+Now, reasons to choose qTox over uTox:
+
+* More features
+
+* Better (at the current time) integration to the tox network
+
+* Slightly improved UI
+
+The choice is yours. You can apt-get utox.
+
+To remove qtox, and replace it with utox, prefom the command
 sudo apt-get remove --purge qtox
+sudo apt-get install utox
+
+To remove tox completly, preform
 sudo rm /etc/apt/sources.list.d/tox.list
+sudo apt-get remove --purge qtox utox toxic
 
   Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
