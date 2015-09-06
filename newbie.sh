@@ -11,7 +11,7 @@
 #  / /___/ /_/ / / / / / / /_/ / /_/ / /_/ / / / / /_/ /                      
 #  \____/\____/_/ /_/ /_/ .___/\__,_/\__/_/_/ /_/\__, /                       
 #                      /_/                      /____/
-#   (assumed buisness name comming soon)
+# (assumed buisness name comming soon)  
 
 
 # Debian Newbie Script v0.3.4 beta
@@ -756,11 +756,11 @@ echo "
            MMMMMM                MMMMM                          
           MMMMMM                  MMMMM                           
           MMMMM                    MMMMM                         
+          MMMM                      MMMM                          
+          MMMM                      MMMM                         
+          MMMM                      MMMM                          
           MMMMM                    MMMMM                          
-          MMMMM                     MMMM                         
-          MMMMM                     MMMM                          
-          MMMMMM                   MMMMM                          
-          MMMMMMM                 MMMMMM                          
+          MMMMMM                  MMMMMM                          
           NMMMMMMM               MMMMMMM                          
           MMMMMMMMM            MMMMMMMMM                          
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                 
@@ -1398,7 +1398,7 @@ a simple command. It would be to hard for a n00b.
 #############################################
 # Make desktop defaults, design, background #
 #############################################
-echo "[Session]
+echo '[Session]
 window_manager=openbox-lxde
 windows_manager/command=openbox
 windows_manager/session=LXDE
@@ -1462,14 +1462,14 @@ guess_default=true
 lxde=true
 
 [Environment]
-menu_prefix=lxde-" > "$HOME/.config/lxsession/LXDE/desktop.conf"
+menu_prefix=lxde-' > "$HOME/.config/lxsession/LXDE/desktop.conf"
 
-echo "[special_cases]
+echo '[special_cases]
 synaptic=synaptic-pkexec
 soffice.bin=libreoffice
-x-terminal-emulator=lxterminal" > "$HOME/.config/lxpanel/launchtaskbar.cfg"
+x-terminal-emulator=lxterminal' > "$HOME/.config/lxpanel/launchtaskbar.cfg"
 
-echo "
+echo '
 # lxpanel <profile> config file. Manually editing is not recommended.
 # Use preference dialog in lxpanel to adjust config when you can.
 
@@ -1619,7 +1619,7 @@ Plugin {
     }
   }
 }
- " > "$HOME/.config/lxpanel/LXDE/panels/panel"
+ ' > "$HOME/.config/lxpanel/LXDE/panels/panel"
 
 #################
 # Desktop Icons #
@@ -1628,7 +1628,7 @@ Plugin {
 ###########
 # Hexchat #
 ###########
-echo "[Desktop Entry]
+echo '[Desktop Entry]
 Name=HexChat
 Name[en_GB]=HexChat
 GenericName=IRC Client
@@ -1646,12 +1646,12 @@ Actions=SafeMode;
 [Desktop Action SafeMode]
 Name=Open Safe Mode
 Name[en_GB]=Open Safe Mode
-Exec=hexchat --no-auto --no-plugins" > "$HOME/Desktop/hexchat.desktop"
+Exec=hexchat --no-auto --no-plugins' > "$HOME/Desktop/hexchat.desktop"
 
 ###########
 # Keepass #
 ###########
-echo "[Desktop Entry]
+echo '[Desktop Entry]
 Name=KeePass2
 GenericName=Password manager
 Exec=keepass2
@@ -1660,12 +1660,12 @@ Terminal=false
 Type=Application
 StartupNotify=false
 Categories=Utility;
-MimeType=application/x-keepass2;" > "$HOME/Desktop/Keepass.desktop"
+MimeType=application/x-keepass2;' > "$HOME/Desktop/Keepass.desktop"
 
 #############
 # Iceweasel #
 #############
-echo "
+echo '
 [Desktop Entry]
 Encoding=UTF-8
 Name=Iceweasel
@@ -1680,12 +1680,12 @@ Icon=iceweasel
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
 StartupWMClass=Iceweasel
-StartupNotify=true" > "$HOME/Desktop/Iceweasel.desktop"
+StartupNotify=true' > "$HOME/Desktop/Iceweasel.desktop"
 
 #######
 # VLC #
 #######
-echo "[Desktop Entry]
+echo '[Desktop Entry]
 Version=1.0
 Name=VLC media player
 GenericName=Media player
@@ -1694,7 +1694,7 @@ Exec=/usr/bin/vlc --started-from-file %U
 TryExec=/usr/bin/vlc
 Icon=vlc
 Terminal=false
-Type=Application" > "$HOME/Desktop/vlc.desktop"
+Type=Application' > "$HOME/Desktop/vlc.desktop"
 
 ########
 # qtox #
