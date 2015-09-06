@@ -493,7 +493,7 @@ apt-get install -y wipe
 # Keepass #
 ###########
 apt-get install -y keepass2
-echo "
+echo '
  _        _______  _______  _______  _______  _______  _______    _______ 
 | \    /\(  ____ \(  ____ \(  ____ )(  ___  )(  ____ \(  ____ \  / ___   )
 |  \  / /| (    \/| (    \/| (    )|| (   ) || (    \/| (    \/  \/   )  |
@@ -528,7 +528,7 @@ I hope you use this password manager
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
     A copy of the license is avalible at http://gnu.org/licences.
 
-" > "$HOME/Desktop/anon/Keepass"
+' > "$HOME/Desktop/anon/Keepass"
 
 #############
 # Bleachbit #
@@ -572,7 +572,7 @@ apt-get install -y tor
 wget https://www.torproject.org/dist/torbrowser/5.0.2/tor-browser-linux32-5.0.2_en-US.tar.xz -O /tmp/tor.tar.xz
 tar xvf /tmp/tor.tar.xz -C /opt/tor
 rm /tmp/tor.tar.xz
-echo "
+echo '
                                         .?:..++.                  
 77777777777777777777777777777          .:.7,~77                     
 77777777777777777777777777777         ?.I:I7:                    
@@ -667,7 +667,7 @@ rm -r -f /opt/tor
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
     A copy of the license is avalible at http://gnu.org/licences.
 
-" > "$HOME/Desktop/anon/tor"
+' > "$HOME/Desktop/anon/tor"
 ##############
 # I2P Script #
 ##############
