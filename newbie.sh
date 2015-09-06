@@ -239,9 +239,9 @@ echo "IF NOT, APT-GET WILL TIME OUT AND PORTIONS OF THIS SCRIPT WILL FAIL!!!"
 echo " "
 echo "YOU MUST ALSO HAVE THIS SCRIPT RUNNING UNDER THE COMMAND"
 echo "su -m -p -c"
-echo "ANY OTHER COMMAND WILL BREAK IT. IF YOU ENCOUNTER AN ERROR WITH THIS, PREFORM"
+echo "ANY OTHER COMMAND WILL BREAK IT. IF YOU ENCOUNTER AN ERROR WITH THIS, PERFORM"
 echo "su -m -p"
-echo "THEN PREFORM THE SCRIPT. IT MUST HAVE THOSE ARGS, -m -p!"
+echo "THEN PERFORM THE SCRIPT. IT MUST HAVE THOSE ARGS, -m -p!"
 echo " "
 echo "YOU MUST ALSO HAVE THIS RUNNING IN A VIRTUAL CONSOLE. IF YOU DO NOT"
 echo "YOU WILL BE UNABLE TO RUN THIS SCRIPT PROPERLY. ABORT THIS SCRIPT NOW"
@@ -294,7 +294,7 @@ fi
 # Last begin echo(s) #
 ######################
 clear
-echo "This begins the automated portion of this script. If you wish to quit, preform:"
+echo "This begins the automated portion of this script. If you wish to quit, perform:"
 echo "su -c killall newbie.sh"
 echo "In a separate terminal. You will have to manually undo anything past this point."
 echo " "
@@ -310,7 +310,7 @@ echo " "
 # Prerequisites #
 #################
 echo "
-# These are your Debian source files. Whenever changing them, preform apt-get update
+# These are your Debian source files. Whenever changing them, perform apt-get update
 # or aptitude update. To use non-free packages, add the words contrib non-free to the
 # ends of these lines. It is highly recommended that you DO NOT USE NON-FREE PACKAGES.
 # These non-free packages contradict the entire GNU Philosophy and are only included for 
@@ -363,7 +363,7 @@ apt-get install -y htop
 # Change ftp to http now that apt-transport-http(s) is installed #
 ##################################################################
 echo "
-# These are your Debian source files. Whenever changing them, preform apt-get update
+# These are your Debian source files. Whenever changing them, perform apt-get update
 # or aptitude update. To use non-free packages, add the words contrib non-free to the
 # ends of these lines. It is highly recommended that you DO NOT USE NON-FREE PACKAGES.
 # These non-free packages contradict the entire GNU Philosophy and are only included for 
@@ -563,7 +563,7 @@ settings (I HIGHLY SUGGEST you select everything
 for deletion, and have the option for overwrite 
 enabled) and run it. It will take a while. Let it 
 run. For deleting individual files, I suggest running
-wipe. To use wipe, preform 
+wipe. To use wipe, perform 
 
 wipe file
 
@@ -668,7 +668,7 @@ a number of guidelines that the Tor devs suggest.
 I hope you use this, and I hope you use this properly!
 
 To configure it, simply double click the tor icon, wait a few
-moments, and it will open. If you wish to remove tor, preform the 
+moments, and it will open. If you wish to remove tor, perform the 
 commands:
 
 apt-get remove --purge tor
@@ -703,12 +703,12 @@ echo "
 The I2P Network is much like tor, only it is a different, less secure (imho)
 network and runs on Java.
 
-Use this as an alternative to tor if you wish. If you want to remove, preform:
+Use this as an alternative to tor if you wish. If you want to remove, perform:
 
 rm /etc/apt/sources.list.d/i2p.list
 apt-get remove --purge ip2 ip2-keyring
 
-To use this, preform the command
+To use this, perform the command
 
 i2prouter
 
@@ -823,11 +823,11 @@ Now, reasons to choose qTox over uTox:
 
 The choice is yours. You can apt-get utox.
 
-To remove qtox, and replace it with utox, prefom the command
+To remove qtox, and replace it with utox, perfom the command
 sudo apt-get remove --purge qtox
 sudo apt-get install utox
 
-To remove tox completly, preform
+To remove tox completly, perform
 sudo rm /etc/apt/sources.list.d/tox.list
 sudo apt-get remove --purge qtox utox toxic
 
@@ -864,7 +864,7 @@ This is the documentation for GPG. GPG (full name GNUPG) is a free/Libre
 version of the PGP encryption algorithm. Commonly used for email, it can 
 also be used to encrypt files. 
 
-To use PGP, you must first create a key. To do this, preform the command
+To use PGP, you must first create a key. To do this, perform the command
 
 gpg --gen-key
 
@@ -892,7 +892,7 @@ After you enter this information, will generate the key. It might seem
 odd that it asks you to move the mouse and type random keys, but it is 
 all for the sake of generating random numbers for your key.
 
-Now, after that has finished, to export your key, preform the command
+Now, after that has finished, to export your key, perform the command
 
 gpg --armor --output pubkey.txt --export [Your Name]
 
@@ -901,7 +901,7 @@ your key to text) Then give your friends your key so they know it is yours.
 
 Now, open Evolution. Evolution needs little configuring for PGP.  
 (but you will need to configure it to use your email, obviously.)
-Preform the command:
+Perform the command:
 
 gpg --list-sigs
 
@@ -915,7 +915,7 @@ better if you add 0x to the key. For example, A832111 would become
 Then, start composing an email for the account you made an email to. 
 Go to the settings and select PGP Sign. This will make your message 
 signed with your PGP Signature. Make the recipient one of your friends. 
-Have him preform the same steps to get a PGP key. Send him a message
+Have him perform the same steps to get a PGP key. Send him a message
 with your signature signed. Then have him send you a message signed. 
 Then, once you get his signature, import it using 
 
@@ -1151,11 +1151,11 @@ If you are reading this, you have successfully installed my script! Good job!
 
 Make sure to delete these extra files and folders after you are finished with them. 
 You will need to find documentation for all the things this has installed. 
-If you do not want a package that this script has installed, preform the command 
+If you do not want a package that this script has installed, perform the command 
 
 sudo apt-get remove --purge [packageName]. 
 
-Periodically preform the commands 
+Periodically perform the commands 
 
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 
@@ -1805,7 +1805,7 @@ echo "
                         (______/ (_______)  \_______/   )_(   (_)"
 
 echo "Press r to restart, or press q if you wish to exit"
-echo "this script and preform more commands. [R/q]"
+echo "this script and perform more commands. [R/q]"
 read -rn1 ans
 
 if [ "${ans:0:1}" = "R" ] || [ "${ans:0:1}" = "r" ]; then
@@ -1860,7 +1860,7 @@ if [ "${ans:0:1}" = "Q" ] || [ "${ans:0:1}" = "q" ]; then
   clear
   echo "Ok then. Just remember you need to restart your computer as soon as you are done with"
   echo "whatever it is you need to do. Your computer is not usable in its current state, except for"
-  echo "this terminal. Preform your commands, then preform the command"
+  echo "this terminal. Perform your commands, then perform the command"
   echo "sudo reboot"
   echo "then enter your own password."
   sleep 3
