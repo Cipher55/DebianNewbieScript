@@ -487,9 +487,83 @@ apt-get install -y --no-install-recommends x-cursor-theme
 ######################
 # Some privacy tools #
 ######################
-apt-get install -y bleachbit
-apt-get install -y gnupg
+mkdir "$HOME/Desktop/anon"
+apt-get install -y wipe
+###########
+# Keepass #
+###########
 apt-get install -y keepass2
+echo "
+ _        _______  _______  _______  _______  _______  _______    _______ 
+| \    /\(  ____ \(  ____ \(  ____ )(  ___  )(  ____ \(  ____ \  / ___   )
+|  \  / /| (    \/| (    \/| (    )|| (   ) || (    \/| (    \/  \/   )  |
+|  (_/ / | (__    | (__    | (____)|| (___) || (_____ | (_____       /   )
+|   _ (  |  __)   |  __)   |  _____)|  ___  |(_____  )(_____  )    _/   / 
+|  ( \ \ | (      | (      | (      | (   ) |      ) |      ) |   /   _/  
+|  /  \ \| (____/\| (____/\| )      | )   ( |/\____) |/\____) |  (   (__/\
+|_/    \/(_______/(_______/|/       |/     \|\_______)\_______)  \_______/
+
+Keepass is a system utility to store passwords into an encrypted, compressed
+file. Many people will suggest using Keepass X, but I do not understand why,
+as Keepass 2 is a newer version. Simpily follow the onscreen instructions
+when you open keepass to get set up an archive. I suggest you set the archive
+type to gzip. This utility can also generate passwords. I do not use this 
+myself. Instead I use http://securepasswordgenerator.com. You should too. Here
+are some tips:
+
+* Set your passwords to expire in a few months
+
+* Don't use the same password for everything
+
+* Don't use something like CandyCru$h69 as a password
+
+* Change every password at the same time
+
+I hope you use this password manager
+
+    Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.
+
+" > "$HOME/Desktop/anon/Keepass"
+
+#############
+# Bleachbit #
+#############
+apt-get install -y bleachbit
+echo "
+  ____  _                 _     _     _ _   
+ |  _ \| |               | |   | |   (_) |  
+ | |_) | | ___  __ _  ___| |__ | |__  _| |_ 
+ |  _ <| |/ _ \/ _` |/ __| '_ \| '_ \| | __|
+ | |_) | |  __/ (_| | (__| | | | |_) | | |_ 
+ |____/|_|\___|\__,_|\___|_| |_|_.__/|_|\__|
+
+Bleachbit is a private drive-wiping tool much like
+CCleaner for Windows. Simpily open this up, select 
+settings (I HIGHLY SUGGEST you select everything 
+for deletion, and have the option for overwrite 
+enabled) and run it. It'll take a while. Let it 
+run. For deleting individual files, I suggest running
+wipe. To use wipe, preform 
+
+wipe file
+
+It's that simple. Don't run other programs while 
+running Bleachbit. It will cause it to slow down.
+
+    Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.
+
+" > "$HOME/Desktop/anon/Bleachbit"
+
 
 ########################################
 # TOR v. 5.0.2 Anonizer Network script #
@@ -498,7 +572,6 @@ apt-get install -y tor
 wget https://www.torproject.org/dist/torbrowser/5.0.2/tor-browser-linux32-5.0.2_en-US.tar.xz -O /tmp/tor.tar.xz
 tar xvf /tmp/tor.tar.xz -C /opt/tor
 rm /tmp/tor.tar.xz
-mkdir "$HOME/Desktop/anon"
 echo "
                                         .?:..++.                  
 77777777777777777777777777777          .:.7,~77                     
@@ -595,7 +668,6 @@ rm -r -f /opt/tor
     A copy of the license is avalible at http://gnu.org/licences.
 
 " > "$HOME/Desktop/anon/tor"
-
 ##############
 # I2P Script #
 ##############
@@ -641,40 +713,6 @@ For more information, see: https://geti2p.net/en/download/Debian#Post-install_wo
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
     A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/anon/i2p"
-
-#######################
-# Communication tools #
-#######################
-apt-get install -y evolution
-#####################################################################################
-# Hexchat instead of weechat or irissi or IRCii because a GUI is easiest for a n00b #
-#####################################################################################
-apt-get install -y hexchat
-
-###############
-# Media tools #
-###############
-apt-get install -y vlc
-apt-get install -y lame
-#####################################################
-# DO NOT REMOVE SOX OR VORBIS-TOOLS FROM THIS LIST. #
-# IT IS A DEPENDENCY FURTHER IN THE SCRIPT          #
-#####################################################
-apt-get install -y sox
-apt-get install -y vorbis-tools
-
-##########################################################
-# remove some other packages that (may) come pre-bundled #
-##########################################################
-apt-get remove --purge -y clipit
-apt-get remove --purge -y dillo
-apt-get remove --purge -y konqureor
-apt-get remove --purge -y kmail
-apt-get remove --purge -y konsole
-apt-get remove --purge -y deluge
-apt-get remove --purge -y vim
-apt-get remove --purge -y vim-common
-
 ########################################
 # qTox, the skype replacement's script #
 ########################################
@@ -795,6 +833,152 @@ sudo apt-get remove --purge qtox utox toxic
     A copy of the license is avalible at http://gnu.org/licences.
 
 " > "$HOME/Desktop/anon/Tox"
+#######
+# GPG #
+#######
+apt-get install -y gnupg
+echo "
+   _______   ____  ____________                                            
+  / ____/ | / / / / / ____/ __ \                                           
+ / / __/  |/ / / / / / __/ /_/ /                                           
+/ /_/ / /|  / /_/ / /_/ / ____/                                            
+\______/ |_/\__________/_/            ____    _ __                         
+   /   |     / ____/_______  ___    _/_/ /   (_) /_  ________              
+  / /| |    / /_  / ___/ _ \/ _ \ _/_// /   / / __ \/ ___/ _ \             
+ / ___ |   / __/ / /  /  __/  __//_/ / /___/ / /_/ / /  /  __/             
+/_/ ____  __________  \________/_/  /_____/_/_.___/_/   \____  _           
+   / __ \/ ____/ __ \   / ____/___  ____________  ______  / /_(_)___  ____ 
+  / /_/ / / __/ /_/ /  / __/ / __ \/ ___/ ___/ / / / __ \/ __/ / __ \/ __ \
+ / ____/ /_/ / ____/  / /___/ / / / /__/ /  / /_/ / /_/ / /_/ / /_/ / / / /
+/_/_________/_/_ __  /_____/_/ /_/\___/_/   \__, / .___/\__/_/\____/_/ /_/ 
+  / ___/__  __(_) /____                    /____/_/                        
+  \__ \/ / / / / __/ _ \                                                   
+ ___/ / /_/ / / /_/  __/                                                   
+/____/\__,_/_/\__/\___/                                                                                                                    
+                                                                                                                      
+
+This is the documentation for GPG. GPG (full name GNUPG) is a free/Libre 
+version of the PGP encryption algorithm. Commonly used for email, it can 
+also be used to encrypt files. 
+
+To use PGP, you must first create a key. To do this, preform the command
+
+gpg --gen-key
+
+This will begin the process. It is recommended you make your key the 
+maximum amount of characters the program allows. It will ask you a few 
+questions that you should answer honestly. There is little to no point 
+not to. An example:
+
+Expire: 3m
+Full name: Dustin M. Shappee
+email: chocolatechip@derpymail.org
+comment: Chocolate D. Chip
+pass-phrase: [secret pass-phrase here]
+
+Using this, I have configured a key to be valid for 3 months, to be 
+registered as my real name (and my online alias) and have configured a 
+secret password (I recommend getting one from http://securepasswordgenerator.com).
+
+The signature looks something like this:
+
+Dustin M. Shappee (ChocolateChip@derpymail.org) <chocolatechip@derpymail.org>
+PUB: 246810 SIG: 1357911 created: 09-10-15 NextCheck: 11-10-15
+
+After you enter this information, will generate the key. It might seem 
+odd that it asks you to move the mouse and type random keys, but it is 
+all for the sake of generating random numbers for your key.
+
+Now, after that has finished, to export your key, preform the command
+
+gpg --armor --output pubkey.txt --export [Your Name]
+
+(the --armor part is pretty important because it is what converts 
+your key to text) Then give your friends your key so they know it is yours.
+
+Now, open Evolution. Evolution needs little configuring for PGP.  
+(but you will need to configure it to use your email, obviously.)
+Preform the command:
+
+gpg --list-sigs
+
+Find the one you just made, copy the SEC (Secret) key, and add it to 
+edit > Preferences > (your account) > edit > Security > Open PGP Key ID.
+
+Paste the PUB key there. Select the three options below it. It works
+better if you add 0x to the key. For example, A832111 would become 
+0xA83211.
+
+Then, start composing an email for the account you made an email to. 
+Go to the settings and select PGP Sign. This will make your message 
+signed with your PGP Signature. Make the recipient one of your friends. 
+Have him preform the same steps to get a PGP key. Send him a message
+with your signature signed. Then have him send you a message signed. 
+Then, once you get his signature, import it using 
+
+gpg --import
+[paste pgp key]
+then press ctrl + D
+
+Now, go back to your email, and select PGP Encrypt and PGP Sign. 
+Send another email to your friend. This will arrive to him encrypted. 
+Now have him reply to the message with another encrypted message. 
+Congratulations, you have sent a PGP Encrypted message. 
+
+Some tips:
+Encrypt whenever possible. If you only encrypt certain things, 
+the surveillance programs will take extra notice to the ones you are 
+encrypting.
+
+Don't automatically trust something just because it has been PGP 
+Signed/Encrypted. Anyone can make a PGP key. People can also make 
+fraudulent keys using your email address. That is why it is 
+important to make your keys expire in a short amount of time, and
+also post your keys to a site your friends can trust.
+
+Thank you for reading this tutorial. 
+
+Don't be a Hillary. Use PGP.
+
+    Copyright (C)  2015  Chocolate Chip Computing
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.
+
+" > "$HOME/Desktop/anon/GPG"
+
+#######################
+# Communication tools #
+#######################
+apt-get install -y evolution
+#####################################################################################
+# Hexchat instead of weechat or irissi or IRCii because a GUI is easiest for a n00b #
+#####################################################################################
+apt-get install -y hexchat
+
+###############
+# Media tools #
+###############
+apt-get install -y vlc
+apt-get install -y lame
+#####################################################
+# DO NOT REMOVE SOX OR VORBIS-TOOLS FROM THIS LIST. #
+# IT IS A DEPENDENCY FURTHER IN THE SCRIPT          #
+#####################################################
+apt-get install -y sox
+apt-get install -y vorbis-tools
+
+##########################################################
+# remove some other packages that (may) come pre-bundled #
+##########################################################
+apt-get remove --purge -y clipit
+apt-get remove --purge -y dillo
+apt-get remove --purge -y konqureor
+apt-get remove --purge -y kmail
+apt-get remove --purge -y konsole
+apt-get remove --purge -y deluge
 
 
 ################
@@ -813,7 +997,7 @@ as you wish.
 Just like the Snipping tool in Windows, you can edit the screenshots using
 a built in editor with an easy to use interface.
 
-  Copyright (C)  2015  Chocolate Chip Computing.
+    Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -915,7 +1099,7 @@ sudo apt-get remove –purge redshift gtk-redshift
 
 And remove it from ~/.config/xsession/LXDE/autostart file.
 
-  Copyright (C)  2015  Chocolate Chip Computing.
+    Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -1033,7 +1217,7 @@ Bitcoin: 1H3gZJnZbraG6Nsg8QodB9CUBEPhjhrVUt
 PayPal: Coming Soon
 Cash Donations: P.O. Box comming soon
 
-  Copyright (C)  2015  Chocolate Chip Computing.
+    Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -1041,120 +1225,6 @@ Cash Donations: P.O. Box comming soon
     A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/README"
 
-############
-# GPG Doc  #
-############
-echo "
-   _______   ____  ____________                                            
-  / ____/ | / / / / / ____/ __ \                                           
- / / __/  |/ / / / / / __/ /_/ /                                           
-/ /_/ / /|  / /_/ / /_/ / ____/                                            
-\______/ |_/\__________/_/            ____    _ __                         
-   /   |     / ____/_______  ___    _/_/ /   (_) /_  ________              
-  / /| |    / /_  / ___/ _ \/ _ \ _/_// /   / / __ \/ ___/ _ \             
- / ___ |   / __/ / /  /  __/  __//_/ / /___/ / /_/ / /  /  __/             
-/_/ ____  __________  \________/_/  /_____/_/_.___/_/   \____  _           
-   / __ \/ ____/ __ \   / ____/___  ____________  ______  / /_(_)___  ____ 
-  / /_/ / / __/ /_/ /  / __/ / __ \/ ___/ ___/ / / / __ \/ __/ / __ \/ __ \
- / ____/ /_/ / ____/  / /___/ / / / /__/ /  / /_/ / /_/ / /_/ / /_/ / / / /
-/_/_________/_/_ __  /_____/_/ /_/\___/_/   \__, / .___/\__/_/\____/_/ /_/ 
-  / ___/__  __(_) /____                    /____/_/                        
-  \__ \/ / / / / __/ _ \                                                   
- ___/ / /_/ / / /_/  __/                                                   
-/____/\__,_/_/\__/\___/                                                                                                                    
-                                                                                                                      
-
-This is the documentation for GPG. GPG (full name GNUPG) is a free/Libre 
-version of the PGP encryption algorithm. Commonly used for email, it can 
-also be used to encrypt files. 
-
-To use PGP, you must first create a key. To do this, preform the command
-
-gpg --gen-key
-
-This will begin the process. It is recommended you make your key the 
-maximum amount of characters the program allows. It will ask you a few 
-questions that you should answer honestly. There is little to no point 
-not to. An example:
-
-Expire: 3m
-Full name: Dustin M. Shappee
-email: chocolatechip@derpymail.org
-comment: Chocolate D. Chip
-pass-phrase: [secret pass-phrase here]
-
-Using this, I have configured a key to be valid for 3 months, to be 
-registered as my real name (and my online alias) and have configured a 
-secret password (I recommend getting one from http://securepasswordgenerator.com).
-
-The signature looks something like this:
-
-Dustin M. Shappee (ChocolateChip@derpymail.org) <chocolatechip@derpymail.org>
-PUB: 246810 SIG: 1357911 created: 09-10-15 NextCheck: 11-10-15
-
-After you enter this information, will generate the key. It might seem 
-odd that it asks you to move the mouse and type random keys, but it is 
-all for the sake of generating random numbers for your key.
-
-Now, after that has finished, to export your key, preform the command
-
-gpg --armor --output pubkey.txt --export [Your Name]
-
-(the --armor part is pretty important because it is what converts 
-your key to text) Then give your friends your key so they know it is yours.
-
-Now, open Evolution. Evolution needs little configuring for PGP.  
-(but you will need to configure it to use your email, obviously.)
-Preform the command:
-
-gpg --list-sigs
-
-Find the one you just made, copy the SEC (Secret) key, and add it to 
-edit > Preferences > (your account) > edit > Security > Open PGP Key ID.
-
-Paste the PUB key there. Select the three options below it. It works
-better if you add 0x to the key. For example, A832111 would become 
-0xA83211.
-
-Then, start composing an email for the account you made an email to. 
-Go to the settings and select PGP Sign. This will make your message 
-signed with your PGP Signature. Make the recipient one of your friends. 
-Have him preform the same steps to get a PGP key. Send him a message
-with your signature signed. Then have him send you a message signed. 
-Then, once you get his signature, import it using 
-
-gpg --import
-[paste pgp key]
-then press ctrl + D
-
-Now, go back to your email, and select PGP Encrypt and PGP Sign. 
-Send another email to your friend. This will arrive to him encrypted. 
-Now have him reply to the message with another encrypted message. 
-Congratulations, you have sent a PGP Encrypted message. 
-
-Some tips:
-Encrypt whenever possible. If you only encrypt certain things, 
-the surveillance programs will take extra notice to the ones you are 
-encrypting.
-
-Don't automatically trust something just because it has been PGP 
-Signed/Encrypted. Anyone can make a PGP key. People can also make 
-fraudulent keys using your email address. That is why it is 
-important to make your keys expire in a short amount of time, and
-also post your keys to a site your friends can trust.
-
-Thank you for reading this tutorial. 
-
-Don't be a Hillary. Use PGP.
-
-    Copyright (C)  2015  Chocolate Chip Computing
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
-
-" > "$HOME/Desktop/anon/GPG"
 
 #######################
 # Iceweasel downloads #
@@ -1288,7 +1358,7 @@ that can be run with a simple comamnd. Anything else that can't be run using a s
 comamnd is a bit more dificult. You shouldn't add anything there that can not be run as
 a simple command. It would be to hard for a n00b.
 
-  Copyright (C)  2015  Chocolate Chip Computing.
+    Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
