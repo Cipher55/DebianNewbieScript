@@ -542,20 +542,25 @@ __________               __
  |____|_  /\____/|____/ |__|  \___  >__|                      
         \/                        \/                         
 
-This is the Tor Browser. The Tor browser uses a system of relays named The Onion Network Router. It is designed to 
-anonize users. Through an elaborate system, it takes your browser session, routs it through Russia, routes that 
-through Germany, roughts that through Scandanavia, routes that back through Russia, and then to the end result. 
+This is the Tor Browser. The Tor browser uses a system of relays named 
+The Onion Network Router. It is designed to anonize users. Through an 
+elaborate system, it takes your browser session, routs it through Russia,
+routes that through Germany, roughts that through Scandanavia, routes 
+that back through Russia, and then to the end result. 
 
-Using tor, there are a number of websits that can only be accessed through an extention called .onion.
-.onion is like .com, but can only be viewed through the tor network. The Tor goals are to allow countries with
-government censorship (like North Korea) to access blocked sites. It also is designed to aid in Governemnt Srevalance systems
-to not find browser traffic. 
+Using tor, there are a number of websits that can only be accessed through 
+an extention called .onion. .onion is like .com, but can only be viewed 
+through the tor network. The Tor goals are to allow countries with government 
+censorship (like North Korea) to access blocked sites. It also is designed 
+to aid in Governemnt Survalance systems to not find browser traffic. 
 
-Tor has been in the news (where they refer to it as the Deep Web) for hosting many illegal activities, such as the now-defunct 
-Silk Road Black Market. Just because Tor hosts illegal things does not make it illegal itself. The same could be said for the 
-regular W3.
+Tor has been in the news (where they refer to it as the Deep/Dark Web) for 
+hosting many illegal activities, such as the now-defunct Silk Road Black 
+Market. Just because Tor hosts illegal things does not make it illegal 
+itself. The same could be said for the regular W3.
 
-Just because tor is secure does not mean it is unpenertable. There are a number of guidelines that the Tor devs suggest.
+Just because tor is secure does not mean it is unpenertable. There are 
+a number of guidelines that the Tor devs suggest.
 
 * Do not log into accounts bearing your real name while on Tor
 
@@ -563,19 +568,21 @@ Just because tor is secure does not mean it is unpenertable. There are a number 
 
 * Do not have a connection open before starting the Tor relay
 
-* Do not use email front-ends in the tor browser (i.e. Do not use Gmail from gmail.com)
+* Do not use email front-ends in the tor browser (i.e. Do not use Gmail 
+  from gmail.com)
 
 * Do not frequently visit sites you visit normally. Switch it up
 
-* Whenever possible, use .onion addresses. If a service (such as 8ch.net or duckduckgo) has an 
-  .onion service, use that instead
+* Whenever possible, use .onion addresses. If a service (such as 8ch.net
+  or duckduckgo) has an .onion service, use that instead
 
 * Do not install additional add-ons to the Tor Browser
 
 I hope you use this, and I hope you use this properly!
 
-To configure it, simply double click the tor icon, wait a few moments, and it will open.
-If you wish to remove tor, preform the commands:
+To configure it, simply double click the tor icon, wait a few
+moments, and it will open. If you wish to remove tor, preform the 
+commands:
 
 apt-get remove --purge tor
 rm -r -f /opt/tor
@@ -795,12 +802,16 @@ sudo apt-get remove --purge qtox utox toxic
 ################
 mkdir "$HOME/Desktop/tools"
 echo "
-Shutter is a tool much like Snipping Tool for Windows Vista and later. Using shutter, you can easily make screenshots.
+Shutter is a tool much like Snipping Tool for Windows Vista and later. 
+Using shutter, you can easily make screenshots.
 
-Simply open shutter, click selection, select, and press enter. You have now taken a screenshot. The default save place is
-inside ~/Pictures/. To change this, go to Edit>Prefrences> Find Save, and change the settings as you wish. 
+Simply open shutter, click selection, select, and press enter. You 
+have now taken a screenshot. The default save place is inside ~/Pictures/. 
+To change this, go to Edit>Prefrences> Find Save, and change the settings 
+as you wish. 
 
-Just like the Snipping tool in Windows, you can edit the screenshots using a built in editor with an easy to use interface.
+Just like the Snipping tool in Windows, you can edit the screenshots using
+a built in editor with an easy to use interface.
 
   Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
@@ -821,8 +832,11 @@ echo "
 ██║  ██║███████╗██████╔╝███████║██║  ██║██║██║        ██║   
 ╚═╝  ╚═╝╚══════╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝ 
 
-These are instructions for using Redshift. Redshift is a software program that allows the computer monitor to adjust its colors
-based on the time of day it is. Redshift has been said to help eye strain and to aid in people going to sleep on time!
+These are instructions for using Redshift. Redshift is a 
+software program that allows the computer monitor to adjust 
+its colors based on the time of day it is. Redshift has been
+said to help eye strain and to aid in people going to sleep 
+on time!
 
 To start, you must make a config file. My own configuration is:
 
@@ -884,14 +898,18 @@ lon=[omited]
 screen=1
 
 
-You don't need to use this exactly as it is here, though. You notice that it asks for latitude and longitudes. What it needs is a decimal 
-number for your zip code. You can easily find this information on the internet. What I suggest you do is make a folder in ~/.config called 
-Redshift. Then make a file called Redshift.conf. Paste the above example configuration into the new file, and then save. Now, to make 
-redshift use this file, import using the command:
+You don't need to use this exactly as it is here, though. You notice that it 
+asks for latitude and longitudes. What it needs is a decimal number for your 
+zip code. You can easily find this information on the internet. What I 
+suggest you do is make a folder in ~/.config called Redshift. Then make 
+a file called Redshift.conf. Paste the above example configuration into 
+the new file, and then save. Now, to make redshift use this file, import
+using the command:
 
 redshift -c ~/.config/Redshift/Redshift.conf
 
-Now whenever redshift starts, it will use that configuration! To remove redshift, do 
+Now whenever redshift starts, it will use that configuration! To remove
+ redshift, do 
 
 sudo apt-get remove –purge redshift gtk-redshift
 
@@ -955,13 +973,15 @@ Periodically preform the commands
 
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 
-I have added LXDE to this script as I use it myself, it is much like the old Windows interface, 
-and it is just good for beginners, in my humble opinion. You can pick another one once you know what you are doing, I guess.
+I have added LXDE to this script as I use it myself, it is much like the old 
+Windows interface, and it is just good for beginners, in my humble opinion. You 
+can pick another one once you know what you are doing, I guess.
 
-To configure your network, use the command nmtui. This is the network-manager terminal interface.
+To configure your network, use the command nmtui. This is the network-manager terminal 
+interface.
 
-I have included a large number of wallpapers for you to choose from. If you want to remove the current 
-wallpaper, then do:
+I have included a large number of wallpapers for you to choose from. If you want to 
+remove the current wallpaper, then do:
 
 sudo rm $HOME/Pictures/.wallpapers/4Chin.png
 
@@ -969,21 +989,25 @@ I suggest putting all backgrounds in this folder. To remove more wallpapers, do
 
 sudo rm -f $HOME/Pictures/.wallpaper/[wallpaper name here]
 
-I do not know who to credit for the wallpaper except for the LAIN, clip-clop, the 2 GNU ones, and Vinyl. 
+I do not know who to credit for the wallpaper except for the LAIN, clip-clop, the 
+2 GNU ones, and Vinyl. 
 
 Credit goes to http://fauux.neocities.org/, Pokehidden, https://gnu.org/graphics and
 https://absentparachute.deviantart.com/art/Vinyl-Scratch-Dj-PoN-3-Wallpaper-288095937
 
-http://gnu.org/graphics is also where a large number of ASCII art in the script came from. The rest
-came from an ASCII Art generator. I do not remember where Mario came from.
+http://gnu.org/graphics is also where a large number of ASCII art in the script came 
+from. The rest came from an ASCII Art generator. I do not remember where Mario came from.
 
-Soon, I will be writing more documentation for all the packages I installed, made for the point of view of n00bs.
+Soon, I will be writing more documentation for all the packages I installed, made for the 
+point of view of n00bs.
 
-I have not included non-free/propitiatory packages in here for a reason. That reason is that they are evil. Find out why at:
+I have not included non-free/propitiatory packages in here for a reason. That reason is that 
+they are evil. Find out why at:
 
 https://gnu.org/philosophy
 
-If you see any non-free/propitiatory packages in this script, contact me immediately at the email address
+If you see any non-free/propitiatory packages in this script, contact me immediately at the
+email address
 
 chocolatechip@derpymail.org
 
@@ -1002,7 +1026,8 @@ https://stallman.org/facebook.html
 
 And always refer to your OS as GNU/Linux unless referring to the kernel itself!
 
-Thanks again for using my script! If you like it, how about giving me some COMPLETLY OPTIONAL donations?
+Thanks again for using my script! If you like it, how about giving me some 
+COMPLETLY OPTIONAL donations?
 
 Bitcoin: 1H3gZJnZbraG6Nsg8QodB9CUBEPhjhrVUt
 PayPal: Coming Soon
@@ -1039,15 +1064,18 @@ echo "
 /____/\__,_/_/\__/\___/                                                                                                                    
                                                                                                                       
 
-This is the documentation for GPG. GPG (full name GNUPG) is a free/Libre version of the PGP encryption
-algorithm. Commonly used for email, it can also be used to encrypt files. 
+This is the documentation for GPG. GPG (full name GNUPG) is a free/Libre 
+version of the PGP encryption algorithm. Commonly used for email, it can 
+also be used to encrypt files. 
 
 To use PGP, you must first create a key. To do this, preform the command
 
 gpg --gen-key
 
-This will begin the process. It is recommended you make your key the maximum amount of characters the program allows. 
-It will ask you a few questions that you should answer honestly. There is little to no point not to. An example:
+This will begin the process. It is recommended you make your key the 
+maximum amount of characters the program allows. It will ask you a few 
+questions that you should answer honestly. There is little to no point 
+not to. An example:
 
 Expire: 3m
 Full name: Dustin M. Shappee
@@ -1055,7 +1083,8 @@ email: chocolatechip@derpymail.org
 comment: Chocolate D. Chip
 pass-phrase: [secret pass-phrase here]
 
-Using this, I have configured a key to be valid for 3 months, to be registered as my real name (and my online alias) and have configured a 
+Using this, I have configured a key to be valid for 3 months, to be 
+registered as my real name (and my online alias) and have configured a 
 secret password (I recommend getting one from http://securepasswordgenerator.com).
 
 The signature looks something like this:
@@ -1063,43 +1092,56 @@ The signature looks something like this:
 Dustin M. Shappee (ChocolateChip@derpymail.org) <chocolatechip@derpymail.org>
 PUB: 246810 SIG: 1357911 created: 09-10-15 NextCheck: 11-10-15
 
-After you enter this information, will generate the key. It might seem odd that it asks you to move the mouse and type random keys, 
-but it is all for the sake of generating random numbers for your key.
+After you enter this information, will generate the key. It might seem 
+odd that it asks you to move the mouse and type random keys, but it is 
+all for the sake of generating random numbers for your key.
 
 Now, after that has finished, to export your key, preform the command
 
 gpg --armor --output pubkey.txt --export [Your Name]
 
-(the --armor part is pretty important because it is what converts your key to text) Then give your friends your key so they know it is yours.
+(the --armor part is pretty important because it is what converts 
+your key to text) Then give your friends your key so they know it is yours.
 
-Now, open Evolution. Evolution needs little configuring for PGP.  (but you will need to configure it to use your email, obviously.)
+Now, open Evolution. Evolution needs little configuring for PGP.  
+(but you will need to configure it to use your email, obviously.)
 Preform the command:
 
 gpg --list-sigs
 
-Find the one you just made, copy the SEC (Secret) key, and add it to edit > Preferences > (your account) > edit > Security > Open PGP Key ID.
+Find the one you just made, copy the SEC (Secret) key, and add it to 
+edit > Preferences > (your account) > edit > Security > Open PGP Key ID.
 
-Paste the PUB key there. Select the three options below it. It works better if you add 0x to the key. For example, A832111 would become 
+Paste the PUB key there. Select the three options below it. It works
+better if you add 0x to the key. For example, A832111 would become 
 0xA83211.
 
-Then, start composing an email for the account you made an email to. Go to the settings and select PGP Sign. This will make your message 
-signed with your PGP Signature. Make the recipient one of your friends. Have him preform the same steps to get a PGP key. Send him a message
- with your signature signed. Then have him send you a message signed. Then, once you get his signature, import it using 
+Then, start composing an email for the account you made an email to. 
+Go to the settings and select PGP Sign. This will make your message 
+signed with your PGP Signature. Make the recipient one of your friends. 
+Have him preform the same steps to get a PGP key. Send him a message
+with your signature signed. Then have him send you a message signed. 
+Then, once you get his signature, import it using 
 
 gpg --import
 [paste pgp key]
 then press ctrl + D
 
-Now, go back to your email, and select PGP Encrypt and PGP Sign. Send another email to your friend. This will arrive to him encrypted. 
-Now have him reply to the message with another encrypted message. Congratulations, you have sent a PGP Encrypted message. 
+Now, go back to your email, and select PGP Encrypt and PGP Sign. 
+Send another email to your friend. This will arrive to him encrypted. 
+Now have him reply to the message with another encrypted message. 
+Congratulations, you have sent a PGP Encrypted message. 
 
 Some tips:
-Encrypt whenever possible. If you only encrypt certain things, the surveillance programs will take extra notice to the ones you are 
+Encrypt whenever possible. If you only encrypt certain things, 
+the surveillance programs will take extra notice to the ones you are 
 encrypting.
 
-Don't automatically trust something just because it has been PGP Signed/Encrypted. Anyone can make a PGP key. People can also make 
-fraudulent keys using your email address. That is why it is important to make your keys expire in a short amount of time, and also post your 
-keys to a site your friends can trust.
+Don't automatically trust something just because it has been PGP 
+Signed/Encrypted. Anyone can make a PGP key. People can also make 
+fraudulent keys using your email address. That is why it is 
+important to make your keys expire in a short amount of time, and
+also post your keys to a site your friends can trust.
 
 Thank you for reading this tutorial. 
 
@@ -1158,8 +1200,8 @@ support (though Flash is kill, evil, and created a downfall of the internet circ
 2001.)
 
 I hope you enjoy Iceweasel, and the plugins I have provided you. Please do not use
-Google Chrome or Chromium. It is a botnet. (Botnet is /g/ slang for Spyware. It is seldom
-used under its origional definition now.)
+Google Chrome or Chromium. It is a botnet. (Botnet is /g/ slang for Spyware. It is 
+seldom used under its origional definition now.)
 
     Copyright (C)  2015  Chocolate Chip Computing
     Permission is granted to copy, distribute and/or modify this document
