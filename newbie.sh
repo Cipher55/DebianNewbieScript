@@ -800,10 +800,14 @@ Don't be a Hillary. Use PGP." > "$HOME/Desktop/anon/GPG"
 # Iceweasel downloads #
 #######################
 mkdir "$HOME/Desktop/iceweasel-plugins"
-echo "These are for your Iceweasel installation. Please add them using the add-on's menu.
-Please. 
-Also, add this: 
+
+echo "These are for your Iceweasel installation. Please add them using the add-on's menu. The plugin called Shumway
+is an optional replacment for the gnash browser plugin that this script provides. I highly suggest you don't use it. It is
+very broken, not yet good for n00bs, laggy, etc. However, once the plugin is fixed, I suggest using it over gnash. Both are only
+for swf files. These are not for other flash formats, such as flv. Also, I suggest adding this: 
 https://github.com/CrisBRM/user.js" > "$HOME/Desktop/iceweasel-plugins/README"
+
+wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O shumway.xpi
 wget https://addons.mozilla.org/firefox/downloads/latest/6623/addon-6623-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/privacy.xpi"
 wget https://addons.mozilla.org/firefox/downloads/latest/607454/addon-607454-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/uBlock-Origin.xpi"
 wget https://mega.nz/meganz.xpi -O "$HOME/Desktop/iceweasel-plugins/mega.xpi"
