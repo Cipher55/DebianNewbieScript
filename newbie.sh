@@ -936,11 +936,36 @@ echo "
 ##################
 # Startup Readme #
 ##################
-echo "If you don't like the startup sound I added, delete it using
-sudo rm -r -f ~/Music/.startup
-and remove it from your ~/.config/lxsession/LXDE/auotstart file
+echo "
+If you don't like the startup sound I added, delete it using
 
-NOTE: I AM NOT AFFILIATED WITH THE WINDOWS 93 JOKE SITE" > "$HOME/Desktop/startup/README"
+sudo rm -r -f ~/Music/.startup
+
+and remove it from your ~/.config/lxsession/LXDE/auotstart file.
+
+THe startup sound, if you can't identify it for whatever reason (which 
+I would personally find odd) is the origional startup sound to the 
+Sony Playstation (tm) Game system. 
+
+NOTE: I AM NOT AFFILIATED WITH THE WINDOWS 93 JOKE SITE. The startup sound
+came from them. You should check them out though. Pretty cool. There is a 
+v2 version now in beta that allows you to use it as an actual computer inteface,
+with local saved files.
+
+I also added a few more things to the ~/.config/lxsession/LXDE/auotstart file. If
+you want to remove any program from starting up, go there. The @ means any thing 
+that can be run with a simple comamnd. Anything else that can't be run using a simple 
+comamnd is a bit more dificult. You shouldn't add anything there that can't be run as
+a simple command. It would be to hard for a n00b.
+
+  Copyright (C)  2015  Chocolate Chip Computing.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.
+
+" > "$HOME/Desktop/startup/README"
 
 #############################################
 # Make desktop defaults, design, background #
