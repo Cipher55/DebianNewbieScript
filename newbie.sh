@@ -797,7 +797,11 @@ https://stallman.org/facebook.html
 
 And always refer to your OS as GNU/Linux unless referring to the kernel itself!
 
-Thanks again for using my script!
+Thanks again for using my script! If you like it, how about giving me some COMPLETLY OPTIONAL donations?
+
+Bitcoin: 1H3gZJnZbraG6Nsg8QodB9CUBEPhjhrVUt
+PayPal: Coming Soon
+Cash Donations: P.O. Box comming soon
 
   Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
