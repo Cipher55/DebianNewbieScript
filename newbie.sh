@@ -14,7 +14,7 @@
 
 
 # Debian Newbie Script v0.3.3 beta
-# This script is designed to partially rice a Debian install, and install new, better components on first run. 
+# This script is designed to rice and optimize a Debian install, and install new, better components on first run. 
 # This script is designed for the latest stable release, Debian GNU/Linux 8.* Jessie. This includes i386 bit 
 # packages, to ensure it works on both 32 and 64 bit systems. All apt packages will obviously be tailored
 # to the system. I am currently trying to figure out how to make an auto-update script to insure that the user is
@@ -560,7 +560,16 @@ apt-get upgrade -y
 apt-get dist-upgrade -y
 apt-get install -y --force-yes i2p
 apt-get install -y --force-yes i2p-keyring
-echo "The I2P Network is much like tor, only it is a different network and runs on Java.
+echo "
+._____________________ 
+|   \_____  \______   \
+|   |/  ____/|     ___/
+|   /       \|    |    
+|___\_______ \____|    
+            \/         
+
+The I2P Network is much like tor, only it is a different, less secure (imho)
+network and runs on Java.
 
 Use this as an alternative to tor if you wish. If you want to remove, preform:
 
@@ -571,7 +580,8 @@ To use this, preform the command
 
 i2prouter
 
-That should start it!
+That should start it! You are now connected to the i2p network. You can configure
+your settings using the web browser window that pops up.
 
 For more information, see: https://geti2p.net/en/download/Debian#Post-install_work
 
