@@ -500,11 +500,34 @@ tar xvf /tmp/tor.tar.xz -C /opt/tor
 rm /tmp/tor.tar.xz
 mkdir "$HOME/Desktop/anon"
 echo "
-___________                                                   
-\__    ___/__________  /\                                     
-  |    | /  _ \_  __ \ \/                                     
-  |    |(  <_> )  | \/ /\                                     
-  |____| \____/|__|    \/                                     
+                                        .?:..++.                  
+?777777777777777777777777777I          .:.7,~77                     
+77777777777777777777777777777,        ?.I:I7:                    
+77777777777777777777777777777,        III77                     
+77777777777777777777777777777,        7I77I
+77777777777777777777777777777,        777+
+77777777777777777777777777777,     N8~7I:
+77777777777777777777777777777,     ,..,DM
+?$77777$77777777777777$77777?       M.:7M                       I7777777~
+         77777777777I              ID.:Z$M                   77777777777~
+         77777777777I            :M+.,=777M:               =777777777777~
+         77777777777I          ,M8,.,,:.M77$MN            ?7777777777777~
+         77777777777I       NM,....=.,..M7777MM          :77777777777777~
+         77777777777I      =M:....,Z..:M..M77777MN       777777777777777~
+         77777777777I     D8....,N,...~.Z.:7777778M     ,777777777777777~
+         77777777777I    DN....M.....I~,...87777778M    ?77777777777$
+         77777777777I    M,..Z,.....O.:,.~,M7777777M?   ?7777777777I
+         77777777777I   MO..+.....7...:,.,+M7777777$M   ?7777777777=
+         77777777777I   M,..,...$....,~.8.NM77777777M   ?7777777777=
+         77777777777I   M,.....M....,$,..,8M77777777M   ?7777777777=
+         77777777777I   ZM..........M.:..NMM7777777ZM   ?7777777777=
+         77777777777I    M..$,.,......:M,MNM7777777M    ?7777777777=
+         77777777777I    ,M..M.M...$..:M.+.M777777MD    ?7777777777=
+         77777777777I     ,M.,M.$..,..:M.7NZ77777MO     ?7777777777=
+         77777777777I       MN.D,Z..M.:7M~M7777$M       ?7777777777=
+         77777777777I         NM+Z~8.MNMMM$7$MM.        ?7777777777=
+         77777777777            ?MMMMMMMMM$.            ?7777777777=
+                             
                                                               
 ___________.__             ________         .__               
 \__    ___/|  |__   ____   \_____  \   ____ |__| ____   ____  
@@ -659,11 +682,51 @@ apt-get install -y --force-yes qtox
 mkdir /usr/share/icons/qTox
 wget https://wiki.tox.chat/lib/tpl/vector/user/logo.png -O /usr/share/icons/qTox/qTox.png
 echo "
-  ______          
- /_  __/___  _  __
-  / / / __ \| |/_/
- / / / /_/ />  <  
-/_/  \____/_/|_|  
+ 
+                      ~8MMMM8~                                     
+                  IMMMMMMMMMMMMMM8                                 
+                $MMMMMMMMMMMMMMMMMM8                               
+               MMMMMMMMMMMMMMMMMMMMMM                              
+            7MMMMMMD:        :$MMMMMM$                            
+           ~MMMMMM              ZMMMMM+                           
+          MMMMMM                ,MMMMM                           
+          IMMMMM                  ZMMMM8                          
+          8MMMMI                   MMMMM                          
+          DMMMM                    MMMMM                          
+          NMMMM~                   MMMMM                          
+          NMMMMM                  ?MMMMM                          
+          NMMMMM+                 NMMMMM                          
+          NMMMMMMO               7MMMMMM                          
+         NMMMMMMMM             OMMMMMMM                          
+:MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                 
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMMM      MMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMM        MMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMM          MMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMM          MMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMM        MMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMMMM    MMMMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMMMN        MMMMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMM                
+MMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMM    ______               
+MMMMMMMMMMMMMMMMMM            MMMMMMMMMMMMMMMMMMM   /_  __/___  _  __              
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    / / / __ \| |/_/          
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   / / / /_/ />  <              
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  /_/  \____/_/|_|              
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                
+                
+                               
+                               
+                                
+                                
+                                
                  
 Tox is an experimental replacement to Skype. Using an encrypted 
 end to end P2P network, with a decentralized system, Tox provides
@@ -1730,6 +1793,7 @@ if [ "${ans:0:1}" = "Q" ] || [ "${ans:0:1}" = "q" ]; then
                        /_/                      /____/  
 (assumed buisness name comming soon)
 "
+echo "for your new GNU/Linux Experience"
   sleep 2
   clear
   exit 1
