@@ -650,7 +650,15 @@ Just like the Snipping tool in Windows, you can edit the screenshots using a bui
 ###################
 # Redshift script #
 ###################
-echo "These are instructions for using Redshift. Redshift is a software program that allows the computer monitor to adjust its colors
+echo "
+██████╗ ███████╗██████╗ ███████╗██╗  ██╗██╗███████╗████████╗
+██╔══██╗██╔════╝██╔══██╗██╔════╝██║  ██║██║██╔════╝╚══██╔══╝
+██████╔╝█████╗  ██║  ██║███████╗███████║██║█████╗     ██║   
+██╔══██╗██╔══╝  ██║  ██║╚════██║██╔══██║██║██╔══╝     ██║   
+██║  ██║███████╗██████╔╝███████║██║  ██║██║██║        ██║   
+╚═╝  ╚═╝╚══════╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝ 
+
+These are instructions for using Redshift. Redshift is a software program that allows the computer monitor to adjust its colors
 based on the time of day it is. Redshift has been said to help eye strain and to aid in people going to sleep on time!
 
 To start, you must make a config file. My own configuration is:
@@ -738,7 +746,41 @@ And remove it from ~/.config/xsession/LXDE/autostart file.
 #################
 # MASTER README #
 #################
-echo "If you are reading this, you have successfully installed my script! Good job!
+echo "
+ ██████╗██╗  ██╗ ██████╗  ██████╗ ██████╗ ██╗      █████╗ ████████╗███████╗    
+██╔════╝██║  ██║██╔═══██╗██╔════╝██╔═══██╗██║     ██╔══██╗╚══██╔══╝██╔════╝    
+██║     ███████║██║   ██║██║     ██║   ██║██║     ███████║   ██║   █████╗      
+██║     ██╔══██║██║   ██║██║     ██║   ██║██║     ██╔══██║   ██║   ██╔══╝      
+╚██████╗██║  ██║╚██████╔╝╚██████╗╚██████╔╝███████╗██║  ██║   ██║   ███████╗    
+ ╚═════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝    
+ ██████╗██╗  ██╗██╗██████╗                                                     
+██╔════╝██║  ██║██║██╔══██╗                                                    
+██║     ███████║██║██████╔╝                                                    
+██║     ██╔══██║██║██╔═══╝                                                     
+╚██████╗██║  ██║██║██║                                                         
+ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝                                                         
+ ██████╗ ██████╗ ███╗   ███╗██████╗ ██╗   ██╗████████╗██╗███╗   ██╗ ██████╗    
+██╔════╝██╔═══██╗████╗ ████║██╔══██╗██║   ██║╚══██╔══╝██║████╗  ██║██╔════╝    
+██║     ██║   ██║██╔████╔██║██████╔╝██║   ██║   ██║   ██║██╔██╗ ██║██║  ███╗   
+██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██║   ██║   ██║   ██║██║╚██╗██║██║   ██║   
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ╚██████╔╝   ██║   ██║██║ ╚████║╚██████╔╝   
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝      ╚═════╝    ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                                  
+
+______         _          _           _        _ _  
+| ___ \       | |        (_)         | |      | | | 
+| |_/ /__  ___| |_ ______ _ _ __  ___| |_ __ _| | | 
+|  __/ _ \/ __| __|______| | '_ \/ __| __/ _` | | | 
+| | | (_) \__ \ |_       | | | | \__ \ || (_| | | | 
+_________/|___/\__|  _   |_|_| |_|___/\__\__,_|_|_| 
+| ___ \             | |               _             
+| |_/ /___  __ _  __| |_ __ ___   ___(_)            
+|    // _ \/ _` |/ _` | '_ ` _ \ / _ \              
+| |\ \  __/ (_| | (_| | | | | | |  __/_             
+\_| \_\___|\__,_|\__,_|_| |_| |_|\___(_)            
+                                                    
+                                                   
+If you are reading this, you have successfully installed my script! Good job!
 
 Make sure to delete these extra files and folders after you are finished with them. 
 You will need to find documentation for all the things this has installed. 
@@ -814,7 +856,31 @@ Cash Donations: P.O. Box comming soon
 ############
 # GPG Doc  #
 ############
-echo "This is the documentation for GPG. GPG (full name GNPGP) is a free/Libre version of the PGP encryption
+echo "
+   ______  ____  _____  _____  _____   ______  _______                                                      
+ .' ___  ||_   \|_   _||_   _||_   _|.' ___  ||_   __ \                                                     
+/ .'   \_|  |   \ | |    | |    | | / .'   \_|  | |__) |                                                    
+| |   ____  | |\ \| |    | '    ' | | |   ____  |  ___/                                                     
+\ `.___]  |_| |_\   |_    \ \__/ /  \ `.___]  |_| |_                                                        
+ `._____.'|____________    `.__.'    `._____.'|_____|_____      _   __                                      
+     / \      |_   __  |                         / /|_   _|    (_) [  |                                     
+    / _ \       | |_ \_|_ .--.  .---.  .---.    / /   | |      __   | |.--.   _ .--.  .---.                 
+   / ___ \      |  _|  [ `/'`\]/ /__\\/ /__\\  / /    | |   _ [  |  | '/'`\ \[ `/'`\]/ /__\\                
+ _/ /   \ \_   _| |_    | |    | \__.,| \__., / /    _| |__/ | | |  |  \__/ | | |    | \__.,                
+|___________|_______|_______    ________.__.'/_/    |________|[___][__;.__.' [___] _  '.__.'                
+|_   __ \  .' ___  ||_   __ \  |_   __  |                                         / |_ (_)                  
+  | |__) |/ .'   \_|  | |__) |   | |_ \_| _ .--.   .---.  _ .--.  _   __  _ .--. `| |-'__   .--.   _ .--.   
+  |  ___/ | |   ____  |  ___/    |  _| _ [ `.-. | / /'`\][ `/'`\][ \ [  ][ '/'`\ \| | [  |/ .'`\ \[ `.-. |  
+ _| |_    \ `.___]  |_| |_      _| |__/ | | | | | | \__.  | |     \ '/ /  | \__/ || |, | || \__. | | | | |  
+|_____|    `._____.'|_____|    |________|[___||__]'.___.'[___]  [\_:  /   | ;.__/ \__/[___]'.__.' [___||__] 
+                (_) / |_                                         \__.'   [__|                               
+ .--.  __   _   __ `| |-'.---.                                                                              
+( (`\][  | | | [  | | | / /__\\                                                                             
+ `'.'. | \_/ |, | | | |,| \__.,                                                                             
+[\__) )'.__.'_/[___]\__/ '.__.'
+
+
+This is the documentation for GPG. GPG (full name GNUPG) is a free/Libre version of the PGP encryption
 algorithm. Commonly used for email, it can also be used to encrypt files. 
 
 To use PGP, you must first create a key. To do this, preform the command
@@ -894,7 +960,24 @@ Don't be a Hillary. Use PGP.
 #######################
 mkdir "$HOME/Desktop/iceweasel-plugins"
 
-echo "These are for your Iceweasel installation. Please add them using the add-on's menu. The plugin called Shumway
+echo "
+ ###                                                         
+  #   ####  ###### #    # ######   ##    ####  ###### #      
+  #  #    # #      #    # #       #  #  #      #      #      
+  #  #      #####  #    # #####  #    #  ####  #####  #      
+  #  #      #      # ## # #      ######      # #      #      
+  #  #    # #      ##  ## #      #    # #    # #      #      
+ ###  ####  ###### #    # ###### #    #  ####  ###### ######
+
+              __                                 ______ _           __          
+     /\      / _|                               |  ____(_)         / _|         
+    /  \    | |_ _ __ ___  ___ ______ ___ _ __  | |__   _ _ __ ___| |_ _____  __
+   / /\ \   |  _| '__/ _ \/ _ \______/ _ \ '__| |  __| | | '__/ _ \  _/ _ \ \/ /
+  / ____ \  | | | | |  __/  __/     |  __/ |    | |    | | | |  __/ || (_) >  < 
+ /_/    \_\ |_| |_|  \___|\___|      \___|_|    |_|    |_|_|  \___|_| \___/_/\_\
+                                                                                
+
+These are for your Iceweasel installation. Please add them using the add-on's menu. The plugin called Shumway
 is an optional replacment for the gnash browser plugin that this script provides. I highly suggest you don't use it. It is
 very broken, not yet good for n00bs, laggy, etc. However, once the plugin is fixed, I suggest using it over gnash. Both are only
 for swf files. These are not for other flash formats, such as flv. Also, I suggest adding this: 
@@ -941,6 +1024,29 @@ echo "
 # Startup Readme #
 ##################
 echo "
+ /$$       /$$   /$$ /$$$$$$$  /$$$$$$$$
+| $$      | $$  / $$| $$__  $$| $$_____/
+| $$      |  $$/ $$/| $$  \ $$| $$      
+| $$       \  $$$$/ | $$  | $$| $$$$$   
+| $$        >$$  $$ | $$  | $$| $$__/   
+| $$       /$$/\  $$| $$  | $$| $$      
+| $$$$$$$$| $$  \ $$| $$$$$$$/| $$$$$$$$
+|________/|__/  |__/|_______/ |________/
+
+ _____ _             _                
+/  ___| |           | |               
+\ `--.| |_ __ _ _ __| |_ _   _ _ __   
+ `--. \ __/ _` | '__| __| | | | '_ \  
+/\__/ / || (_| | |  | |_| |_| | |_) | 
+\____/ \__\__,___|   \__|\__,_| .__/  
+              (_)     | |     | |     
+ ___  ___ _ __ _ _ __ | |_ ___|_|     
+/ __|/ __| '__| | '_ \| __/ __|       
+\__ \ (__| |  | | |_) | |_\__ \       
+|___/\___|_|  |_| .__/ \__|___/       
+                | |                   
+                |_|                  
+
 If you don't like the startup sound I added, delete it using
 
 sudo rm -r -f ~/Music/.startup
@@ -1474,11 +1580,36 @@ if [ "${ans:0:1}" = "Q" ] || [ "${ans:0:1}" = "q" ]; then
   echo "this terminal. Preform your commands, then preform the command"
   echo "sudo reboot"
   echo "then enter your own password."
+  sleep 5
+  clear
+  echo "Now re-entering"
+  echo "
+ _______  _______  _______  __   __ 
+|  _    ||   _   ||       ||  | |  |
+| |_|   ||  |_|  ||  _____||  |_|  |
+|       ||       || |_____ |       |
+|  _   | |       ||_____  ||       |
+| |_|   ||   _   | _____| ||   _   |
+|_______||__| |__||_______||__| |__|
+"
   sleep 3
   clear
-  echo "Now re-entering BASH"
+  echo "Thank you for choosing"
+  echo "
+      ________                     __      __          ________    _          
+     / ____/ /_  ____  _________  / /___ _/ /____     / ____/ /_  (_)___      
+    / /   / __ \/ __ \/ ___/ __ \/ / __ '/ __/ _ \   / /   / __ \/ / __ \     
+   / /___/ / / / /_/ / /__/ /_/ / / /_/ / /_/  __/  / /___/ / / / / /_/ /     
+   \____/_/ /_/\____/\___/\____/_/\__,_/\__/\___/   \____/_/ /_/_/ .___/      
+      ______                            __  _                   /_/           
+     / ____/___  ____ ___  ____  __  __/ /_(_)___  ____ _                     
+    / /   / __ \/ __ '__ \/ __ \/ / / / __/ / __ \/ __ '/                     
+   / /___/ /_/ / / / / / / /_/ / /_/ / /_/ / / / / /_/ /                      
+   \____/\____/_/ /_/ /_/ .___/\__,_/\__/_/_/ /_/\__, /                       
+                       /_/                      /____/  
+(assumed buisness name comming soon)
+"
   sleep 2
-  clear
   exit 1
 fi
 
