@@ -539,12 +539,9 @@ are some tips:
 
 I hope you use this password manager
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 ' > "$HOME/Desktop/anon/Keepass"
 
@@ -573,12 +570,9 @@ wipe file
 It is that simple. Do not run other programs while 
 running Bleachbit. It will cause it to slow down.
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 ' > "$HOME/Desktop/anon/Bleachbit"
 
@@ -652,7 +646,7 @@ itself. The same could be said for the regular W3. In fact, the Tor
 Network is classified as a 502 Non-Profit Orginization in the United
 States.
 
-Just because tor is secure does not mean it is unpenertable. There are 
+Just because Tor is secure does not mean it is impenetrable. There are 
 a number of guidelines that the Tor devs suggest.
 
 * Do not log into accounts bearing your real name while on Tor
@@ -680,12 +674,9 @@ commands:
 apt-get remove --purge tor
 rm -r -f /opt/tor
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 ' > "$HOME/Desktop/anon/tor"
 ##############
@@ -726,12 +717,9 @@ your settings using the web browser window that pops up.
 
 For more information, see: https://geti2p.net/en/download/Debian#Post-install_work
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 " > "$HOME/Desktop/anon/i2p"
 ########################################
 # qTox, the skype replacement's script #
@@ -792,7 +780,7 @@ end to end P2P network, with a decentralized system, Tox provides
 safe, encrypted messages back and forth. Tox can be integrated with
 Tor as well, for more security.
 
-The Tox service itself has many implimentations. Of these are qTox
+The Tox service itself has many was to access it. Of these are qTox
 (which this script installs), uTox, a lighter-weight qTox, and Toxic,
 a terminal-based implimentation.
 
@@ -815,23 +803,21 @@ system, or need to do whatever, there is no way to get back your account (unless
 you still have your toxme.io password. Then you can change the Tox ID assosiated
 with your account and then boom! You are done.
 
-A friend of mine, under the online alias Candy Gumdrop (fellow furry/brony) 
-is a co-developer of uTox. Boy, is he mad that I use qTox. I feel that I should
-include some of his points to be fair. 
+A friend of mine, under the online alias Candy Gumdrop (fellow furry/brony) helped
+create uTox. He is a bit upset that I use qTox. I feel that I should include some of 
+his points to be fair. 
 
 Reasons to choose uTox over qTox:
 
 * Lightweight and memory efficient
 
-* Tab completion
+* Better themes
 
-* QT-type style themes
+* Better (at the current time) integration to the tox network
 
 Now, reasons to choose qTox over uTox:
 
 * More features
-
-* Better (at the current time) integration to the tox network
 
 * Slightly improved UI
 
@@ -845,12 +831,9 @@ To remove tox completly, preform
 sudo rm /etc/apt/sources.list.d/tox.list
 sudo apt-get remove --purge qtox utox toxic
 
-  Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 " > "$HOME/Desktop/anon/Tox"
 #######
@@ -960,12 +943,9 @@ Thank you for reading this tutorial.
 
 Don't be a Hillary. Use PGP.
 
-    Copyright (C)  2015  Chocolate Chip Computing
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 " > "$HOME/Desktop/anon/GPG"
 
@@ -1025,12 +1005,9 @@ as you wish.
 Just like the Snipping tool in Windows, you can edit the screenshots using
 a built in editor with an easy to use interface.
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 " > "$HOME/Dekstop/tools/Shutter"
 
 ###################
@@ -1127,12 +1104,9 @@ sudo apt-get remove –purge redshift gtk-redshift
 
 And remove it from ~/.config/xsession/LXDE/autostart file.
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 " > "$HOME/Desktop/tools/Redshift"
 
 
@@ -1245,12 +1219,9 @@ Bitcoin: 1H3gZJnZbraG6Nsg8QodB9CUBEPhjhrVUt
 PayPal: Coming Soon
 Cash Donations: P.O. Box comming soon
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 " > "$HOME/Desktop/README"
 
 
@@ -1301,12 +1272,9 @@ I hope you enjoy Iceweasel, and the plugins I have provided you. Please do not u
 Google Chrome or Chromium. It is a botnet. (Botnet is /g/ slang for Spyware. It is 
 seldom used under its origional definition now.)
 
-    Copyright (C)  2015  Chocolate Chip Computing
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 " > "$HOME/Desktop/iceweasel-plugins/README"
 
 wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O "$HOME/Desktop/iceweasel-plugins/shumway.xpi"
@@ -1386,12 +1354,9 @@ that can be run with a simple comamnd. Anything else that ca not be run using a 
 comamnd is a bit more dificult. You should not add anything there that can not be run as
 a simple command. It would be to hard for a n00b.
 
-    Copyright (C)  2015  Chocolate Chip Computing.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is avalible at http://gnu.org/licences.
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, visit 
+http://creativecommons.org/licenses/by-sa/4.0/.
 
 ' > "$HOME/Desktop/startup/README"
 
