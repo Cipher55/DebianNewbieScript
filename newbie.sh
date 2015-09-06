@@ -465,7 +465,7 @@ apt-get install -y synaptic
 ##########################################################################
 wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash.deb
 wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash-common_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-common.deb
-http://httpredir.debian.org/debian/pool/main/g/gnash/browser-plugin-gnash_0.8.11~git20150419-1~bpo8+1_i386.deb-O /tmp/gnash-plugin.deb
+wget http://httpredir.debian.org/debian/pool/main/g/gnash/browser-plugin-gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-plugin.deb
 dpkg -i /tmp/gnash.deb
 dpkg -i /tmp/gnash-common.deb
 dpkg -i /tmp/gnash-plugin.deb
