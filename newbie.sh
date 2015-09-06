@@ -634,9 +634,9 @@ __________               __
 
 This is the Tor Browser. The Tor browser uses a system of relays named 
 The Onion Network Router. It is designed to anonize users. Through an 
-elaborate system, it takes your browser session, routs it through Russia,
-routes that through Germany, roughts that through Scandanavia, routes 
-that back through Russia, and then to the end result. 
+elaborate system, it takes your browser session, routes it through Russia,
+routes that through Germany, routes that through Scandanavia, routes 
+that back through Russia, and then to the end result (for example). 
 
 Using tor, there are a number of websits that can only be accessed through 
 an extention called .onion. .onion is like .com, but can only be viewed 
@@ -647,7 +647,9 @@ to aid in Governemnt Survalance systems to not find browser traffic.
 Tor has been in the news (where they refer to it as the Deep/Dark Web) for 
 hosting many illegal activities, such as the now-defunct Silk Road Black 
 Market. Just because Tor hosts illegal things does not make it illegal 
-itself. The same could be said for the regular W3.
+itself. The same could be said for the regular W3. In fact, the Tor 
+Network is classified as a 502 Non-Profit Orginization in the United
+States.
 
 Just because tor is secure does not mean it is unpenertable. There are 
 a number of guidelines that the Tor devs suggest.
@@ -677,7 +679,7 @@ commands:
 apt-get remove --purge tor
 rm -r -f /opt/tor
 
-  Copyright (C)  2015  Chocolate Chip Computing.
+    Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -723,7 +725,7 @@ your settings using the web browser window that pops up.
 
 For more information, see: https://geti2p.net/en/download/Debian#Post-install_work
 
-  Copyright (C)  2015  Chocolate Chip Computing.
+    Copyright (C)  2015  Chocolate Chip Computing.
     Permission is granted to copy, distribute and/or modify this document
     under the terms of the GNU Free Documentation License, Version 1.3
     or any later version published by the Free Software Foundation;
@@ -1003,6 +1005,14 @@ apt-get remove --purge -y deluge
 ################
 mkdir "$HOME/Desktop/tools"
 echo "
+  _____ __ __  __ __  ______  ______    ___  ____  
+ / ___/|  |  ||  |  ||      ||      |  /  _]|    \ 
+(   \_ |  |  ||  |  ||      ||      | /  [_ |  D  )
+ \__  ||  _  ||  |  ||_|  |_||_|  |_||    _]|    / 
+ /  \ ||  |  ||  :  |  |  |    |  |  |   [_ |    \ 
+ \    ||  |  ||     |  |  |    |  |  |     ||  .  \
+  \___||__|__| \__,_|  |__|    |__|  |_____||__|\_| 
+      
 Shutter is a tool much like Snipping Tool for Windows Vista and later. 
 Using shutter, you can easily make screenshots.
 
@@ -1330,7 +1340,7 @@ echo "
 ##################
 # Startup Readme #
 ##################
-echo "
+echo '
  /$$       /$$   /$$ /$$$$$$$  /$$$$$$$$
 | $$      | $$  / $$| $$__  $$| $$_____/
 | $$      |  $$/ $$/| $$  \ $$| $$      
@@ -1354,13 +1364,13 @@ echo "
                 | |                   
                 |_|                  
 
-If you don't like the startup sound I added, delete it using
+If you do not like the startup sound I added, delete it using
 
 sudo rm -r -f ~/Music/.startup
 
 and remove it from your ~/.config/lxsession/LXDE/auotstart file.
 
-THe startup sound, if you can't identify it for whatever reason (which 
+THe startup sound, if you can not identify it for whatever reason (which 
 I would personally find odd) is the origional startup sound to the 
 Sony Playstation (tm) Game system. 
 
@@ -1371,8 +1381,8 @@ with local saved files.
 
 I also added a few more things to the ~/.config/lxsession/LXDE/auotstart file. If
 you want to remove any program from starting up, go there. The @ means any thing 
-that can be run with a simple comamnd. Anything else that can't be run using a simple 
-comamnd is a bit more dificult. You shouldn't add anything there that can not be run as
+that can be run with a simple comamnd. Anything else that ca not be run using a simple 
+comamnd is a bit more dificult. You should not add anything there that can not be run as
 a simple command. It would be to hard for a n00b.
 
     Copyright (C)  2015  Chocolate Chip Computing.
@@ -1382,7 +1392,7 @@ a simple command. It would be to hard for a n00b.
     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
     A copy of the license is avalible at http://gnu.org/licences.
 
-" > "$HOME/Desktop/startup/README"
+' > "$HOME/Desktop/startup/README"
 
 #############################################
 # Make desktop defaults, design, background #
