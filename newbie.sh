@@ -239,15 +239,26 @@ clear
 ####################
 # Confirm Script 2 #
 ####################
-echo "Are you SURE you want to continue? This will take a long time."
+echo "Here is a needed disclaimer:"
+echo " "
+echo "Please remember this is a beta version. Thismeans it may break your system"
+echo " "
 echo "You will have to MANUALLY UNDO any changes from this point on!"
 echo " "
 echo "YOU MUST HAVE A CONSTANT, DECENT ENOUGH INTERNET CONNECTION FOR THIS SCRIPT!!!"
 echo "IF NOT, APT-GET WILL TIME OUT AND PORTIONS OF THIS SCRIPT WILL FAIL!!!"
 echo " "
+echo "YOU MUST ALSO HAVE THIS SCRIPT RUNNING UNDER THE COMMAND"
+echo "su -m -p -c"
+echo "ANY OTHER COMMAND WILL BREAK IT. IF YOU ENCOUNTER AN ERROR WITH THIS, PREFORM"
+echo "su -m -p"
+echo "THEN PREFORM THE SCRIPT. IT MUST HAVE THOSE ARGS, -m -p!"
+echo " "
 echo "YOU MUST ALSO HAVE THIS RUNNING IN A VIRTUAL CONSOLE. IF YOU DON'T"
 echo "YOU WILL BE UNABLE TO RUN THIS SCRIPT PROPERLY. ABORT THIS SCRIPT NOW"
 echo "AND PRESS CTRL + ALT + F1 TO SWITCH TO A VIRTUAL CONSOLE!"
+echo " "
+echo "This will also take a very long time to finish."
 echo "Continue? [Y/n]?"
 read -rn1 ans
 
