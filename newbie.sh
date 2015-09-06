@@ -850,7 +850,7 @@ https://github.com/CrisBRM/user.js
     A copy of the license is avalible at http://gnu.org/licences.
 " > "$HOME/Desktop/iceweasel-plugins/README"
 
-wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O shumway.xpi
+wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O $HOME/Desktop/iceweasel-plugins/shumway.xpi
 wget https://addons.mozilla.org/firefox/downloads/latest/6623/addon-6623-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/privacy.xpi"
 wget https://addons.mozilla.org/firefox/downloads/latest/607454/addon-607454-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/uBlock-Origin.xpi"
 wget https://mega.nz/meganz.xpi -O "$HOME/Desktop/iceweasel-plugins/mega.xpi"
@@ -891,7 +891,7 @@ NOTE: I AM NOT AFFILIATED WITH THE WINDOWS 93 JOKE SITE" > "$HOME/Desktop/startu
 #############################################
 # Make desktop defaults, design, background #
 #############################################
-echo '[Session]
+echo "[Session]
 window_manager=openbox-lxde
 windows_manager/command=openbox
 windows_manager/session=LXDE
@@ -955,14 +955,14 @@ guess_default=true
 lxde=true
 
 [Environment]
-menu_prefix=lxde-' > "$HOME/.config/lxsession/LXDE/desktop.conf"
+menu_prefix=lxde-" > "$HOME/.config/lxsession/LXDE/desktop.conf"
 
-echo '[special_cases]
+echo "[special_cases]
 synaptic=synaptic-pkexec
 soffice.bin=libreoffice
-x-terminal-emulator=lxterminal' > "$HOME/.config/lxpanel/launchtaskbar.cfg"
+x-terminal-emulator=lxterminal" > "$HOME/.config/lxpanel/launchtaskbar.cfg"
 
-echo '
+echo "
 # lxpanel <profile> config file. Manually editing is not recommended.
 # Use preference dialog in lxpanel to adjust config when you can.
 
@@ -1112,7 +1112,7 @@ Plugin {
     }
   }
 }
- ' > "$HOME/.config/lxpanel/LXDE/panels/panel"
+ " > "$HOME/.config/lxpanel/LXDE/panels/panel"
 
 #################
 # Desktop Icons #
@@ -1121,7 +1121,7 @@ Plugin {
 ###########
 # Hexchat #
 ###########
-echo '[Desktop Entry]
+echo "[Desktop Entry]
 Name=HexChat
 Name[en_GB]=HexChat
 GenericName=IRC Client
@@ -1139,12 +1139,12 @@ Actions=SafeMode;
 [Desktop Action SafeMode]
 Name=Open Safe Mode
 Name[en_GB]=Open Safe Mode
-Exec=hexchat --no-auto --no-plugins' > "$HOME/Desktop/hexchat.desktop"
+Exec=hexchat --no-auto --no-plugins" > "$HOME/Desktop/hexchat.desktop"
 
 ###########
 # Keepass #
 ###########
-echo '[Desktop Entry]
+echo "[Desktop Entry]
 Name=KeePass2
 GenericName=Password manager
 Exec=keepass2
@@ -1153,12 +1153,12 @@ Terminal=false
 Type=Application
 StartupNotify=false
 Categories=Utility;
-MimeType=application/x-keepass2;' > "$HOME/Desktop/Keepass.desktop"
+MimeType=application/x-keepass2;" > "$HOME/Desktop/Keepass.desktop"
 
 #############
 # Iceweasel #
 #############
-echo '
+echo "
 [Desktop Entry]
 Encoding=UTF-8
 Name=Iceweasel
@@ -1173,12 +1173,12 @@ Icon=iceweasel
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
 StartupWMClass=Iceweasel
-StartupNotify=true' > "$HOME/Desktop/Iceweasel.desktop"
+StartupNotify=true" > "$HOME/Desktop/Iceweasel.desktop"
 
 #######
 # VLC #
 #######
-echo '[Desktop Entry]
+echo "[Desktop Entry]
 Version=1.0
 Name=VLC media player
 GenericName=Media player
@@ -1187,7 +1187,7 @@ Exec=/usr/bin/vlc --started-from-file %U
 TryExec=/usr/bin/vlc
 Icon=vlc
 Terminal=false
-Type=Application' > "$HOME/Desktop/vlc.desktop"
+Type=Application" > "$HOME/Desktop/vlc.desktop"
 
 ########
 # qtox #
