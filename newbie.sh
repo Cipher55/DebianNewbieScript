@@ -467,11 +467,14 @@ apt-get install -y synaptic
 ##########################################################################
 wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash.deb
 wget http://httpredir.debian.org/debian/pool/main/g/gnash/gnash-common_0.8.11~git20150419-1~bpo8+1_i386.deb -O /tmp/gnash-common.deb
+http://httpredir.debian.org/debian/pool/main/g/gnash/browser-plugin-gnash_0.8.11~git20150419-1~bpo8+1_i386.deb-O /tmp/gnash-plugin.deb
 dpkg -i /tmp/gnash.deb
 dpkg -i /tmp/gnash-common.deb
+dpkg -i /tmp/gnash-plugin.deb
 apt-get -f -y install
 rm /tmp/gnash.deb
 rm /tmp/gnash-common.deb
+rm /tmp/gnash-plugin.deb
 
 ##################################################
 # Cursor Packages                                #
@@ -801,7 +804,6 @@ echo "These are for your Iceweasel installation. Please add them using the add-o
 Please. 
 Also, add this: 
 https://github.com/CrisBRM/user.js" > "$HOME/Desktop/iceweasel-plugins/README"
-wget https://mozilla.github.io/shumway/extension/firefox/shumway.xpi -O "$HOME/Desktop/iceweasel-plugins/shumway.xpi"
 wget https://addons.mozilla.org/firefox/downloads/latest/6623/addon-6623-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/privacy.xpi"
 wget https://addons.mozilla.org/firefox/downloads/latest/607454/addon-607454-latest.xpi -O "$HOME/Desktop/iceweasel-plugins/uBlock-Origin.xpi"
 wget https://mega.nz/meganz.xpi -O "$HOME/Desktop/iceweasel-plugins/mega.xpi"
