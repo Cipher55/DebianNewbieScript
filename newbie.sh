@@ -596,7 +596,8 @@ Simply open it, click selection, select, and press enter. You have now taken a s
 ###################
 # Redshift script #
 ###################
-echo "These are instructions for using Redshift. Redshift is a software program that allows the computer monitor to adjust its colors based on the time of day it is. Redshift has been said to help eye strain and to aid in people going to sleep on time!
+echo "These are instructions for using Redshift. Redshift is a software program that allows the computer monitor to adjust its colors
+based on the time of day it is. Redshift has been said to help eye strain and to aid in people going to sleep on time!
 
 To start, you must make a config file. My own configuration is:
 
@@ -658,7 +659,10 @@ lon=[omited]
 screen=1
 
 
-You don't need to use this exactly as it is here, though. You notice that it asks for latitude and longitudes. What it needs is a decimal number for your zip code. You can easily find this information on the internet. What I suggest you do is make a folder in ~/.config called Redshift. Then make a file called Redshift.conf. Paste the above example configuration into the new file, and then save. Now, to make redshift use this file, import using the command:
+You don't need to use this exactly as it is here, though. You notice that it asks for latitude and longitudes. What it needs is a decimal 
+number for your zip code. You can easily find this information on the internet. What I suggest you do is make a folder in ~/.config called 
+Redshift. Then make a file called Redshift.conf. Paste the above example configuration into the new file, and then save. Now, to make 
+redshift use this file, import using the command:
 
 redshift -c ~/.config/Redshift/Redshift.conf
 
@@ -759,7 +763,8 @@ To use PGP, you must first create a key. To do this, preform the command
 
 gpg --gen-key
 
-This will begin the process. It is recommended you make your key the maximum amount of characters the program allows. It will ask you a few questions that you should answer honestly. There is little to no point not to. An example:
+This will begin the process. It is recommended you make your key the maximum amount of characters the program allows. 
+It will ask you a few questions that you should answer honestly. There is little to no point not to. An example:
 
 Expire: 3m
 Full name: Dustin M. Shappee
@@ -767,14 +772,16 @@ email: chocolatechip@derpymail.org
 comment: Chocolate D. Chip
 pass-phrase: [secret pass-phrase here]
 
-Using this, I have configured a key to be valid for 3 months, to be registered as my real name (and my online alias) and have configured a secret password (I recommend getting one from http://securepasswordgenerator.com).
+Using this, I have configured a key to be valid for 3 months, to be registered as my real name (and my online alias) and have configured a 
+secret password (I recommend getting one from http://securepasswordgenerator.com).
 
 The signature looks something like this:
 
 Dustin M. Shappee (ChocolateChip@derpymail.org) <chocolatechip@derpymail.org>
 PUB: 246810 SIG: 1357911 created: 09-10-15 NextCheck: 11-10-15
 
-After you enter this information, will generate the key. It might seem odd that it asks you to move the mouse and type random keys, but it is all for the sake of generating random numbers for your key.
+After you enter this information, will generate the key. It might seem odd that it asks you to move the mouse and type random keys, 
+but it is all for the sake of generating random numbers for your key.
 
 Now, after that has finished, to export your key, preform the command
 
@@ -782,24 +789,34 @@ gpg --armor --output pubkey.txt --export [Your Name]
 
 (the --armor part is pretty important because it is what converts your key to text) Then give your friends your key so they know it is yours.
 
-Now, open Evolution. Evolution needs little configuring for PGP.  (but you will need to configure it to use your email, obviously.) Preform the command:
+Now, open Evolution. Evolution needs little configuring for PGP.  (but you will need to configure it to use your email, obviously.)
+Preform the command:
 
 gpg --list-sigs
 
-Find the one you just made, copy the SEC (Secret) key, and add it to edit > Preferences > (your account) > edit > Security > Open PGP Key ID. Paste the PUB key there. Select the three options below it. It works better if you add 0x to the key. For example, A832111 would become 0xA83211.
+Find the one you just made, copy the SEC (Secret) key, and add it to edit > Preferences > (your account) > edit > Security > Open PGP Key ID.
 
-Then, start composing an email for the account you made an email to. Go to the settings and select PGP Sign. This will make your message signed with your PGP Signature. Make the recipient one of your friends. Have him preform the same steps to get a PGP key. Send him a message with your signature signed. Then have him send you a message signed. Then, once you get his signature, import it using 
+Paste the PUB key there. Select the three options below it. It works better if you add 0x to the key. For example, A832111 would become 
+0xA83211.
+
+Then, start composing an email for the account you made an email to. Go to the settings and select PGP Sign. This will make your message 
+signed with your PGP Signature. Make the recipient one of your friends. Have him preform the same steps to get a PGP key. Send him a message
+ with your signature signed. Then have him send you a message signed. Then, once you get his signature, import it using 
 
 gpg --import
 [paste pgp key]
 then press ctrl + D
 
-Now, go back to your email, and select PGP Encrypt and PGP Sign. Send another email to your friend. This will arrive to him encrypted. Now have him reply to the message with another encrypted message. Congratulations, you have sent a PGP Encrypted message. 
+Now, go back to your email, and select PGP Encrypt and PGP Sign. Send another email to your friend. This will arrive to him encrypted. 
+Now have him reply to the message with another encrypted message. Congratulations, you have sent a PGP Encrypted message. 
 
 Some tips:
-Encrypt whenever possible. If you only encrypt certain things, the surveillance programs will take extra notice to the ones you are encrypting.
+Encrypt whenever possible. If you only encrypt certain things, the surveillance programs will take extra notice to the ones you are 
+encrypting.
 
-Don't automatically trust something just because it has been PGP Signed/Encrypted. Anyone can make a PGP key. People can also make fraudulent keys using your email address. That is why it is important to make your keys expire in a short amount of time, and also post your keys to a site your friends can trust.
+Don't automatically trust something just because it has been PGP Signed/Encrypted. Anyone can make a PGP key. People can also make 
+fraudulent keys using your email address. That is why it is important to make your keys expire in a short amount of time, and also post your 
+keys to a site your friends can trust.
 
 Thank you for reading this tutorial. 
 
