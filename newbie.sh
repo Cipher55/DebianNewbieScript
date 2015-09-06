@@ -500,6 +500,25 @@ tar xvf /tmp/tor.tar.xz -C /opt/tor
 rm /tmp/tor.tar.xz
 mkdir "$HOME/Desktop/anon"
 echo "
+___________                                                   
+\__    ___/__________  /\                                     
+  |    | /  _ \_  __ \ \/                                     
+  |    |(  <_> )  | \/ /\                                     
+  |____| \____/|__|    \/                                     
+                                                              
+___________.__             ________         .__               
+\__    ___/|  |__   ____   \_____  \   ____ |__| ____   ____  
+  |    |   |  |  \_/ __ \   /   |   \ /    \|  |/  _ \ /    \ 
+  |    |   |   Y  \  ___/  /    |    \   |  \  (  <_> )   |  \
+  |____|   |___|  /\___  > \_______  /___|  /__|\____/|___|  /
+                \/     \/          \/     \/               \/ 
+__________               __                                   
+\______   \ ____  __ ___/  |_  ___________                    
+ |       _//  _ \|  |  \   __\/ __ \_  __ \                   
+ |    |   (  <_> )  |  /|  | \  ___/|  | \/                   
+ |____|_  /\____/|____/ |__|  \___  >__|                      
+        \/                        \/                         
+
 This is the Tor Browser. The Tor browser uses a system of relays named The Onion Network Router. It is designed to 
 anonize users. Through an elaborate system, it takes your browser session, routs it through Russia, routes that 
 through Germany, roughts that through Scandanavia, routes that back through Russia, and then to the end result. 
