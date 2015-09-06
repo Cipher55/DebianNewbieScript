@@ -1,4 +1,50 @@
-#!/bin/bash
+ ###                                                         
+  #   ####  ###### #    # ######   ##    ####  ###### #      
+  #  #    # #      #    # #       #  #  #      #      #      
+  #  #      #####  #    # #####  #    #  ####  #####  #      
+  #  #      #      # ## # #      ######      # #      #      
+  #  #    # #      ##  ## #      #    # #    # #      #      
+ ###  ####  ###### #    # ###### #    #  ####  ###### ######
+
+              __                                 ______ _           __          
+     /\      / _|                               |  ____(_)         / _|         
+    /  \    | |_ _ __ ___  ___ ______ ___ _ __  | |__   _ _ __ ___| |_ _____  __
+   / /\ \   |  _|  __/ _ \/ _ \______/ _ \  __| |  __| | |  __/ _ \  _/ _ \ \/ /
+  / ____ \  | | | | |  __/  __/     |  __/ |    | |    | | | |  __/ || (_) >  < 
+ /_/    \_\ |_| |_|  \___|\___|      \___|_|    |_|    |_|_|  \___|_| \___/_/\_\
+
+Iceweasel is a Debian fork of Firefox. While not an exact clone, it keeps true and up
+to date on the Official Firefox code. Iceweasel removes a number of features in the 
+official Firefox, for the better. It removes DRM, many Phone-Home features, and some 
+other needless features. Iceweasel is fast as well.
+
+Contained in this folder are for your Iceweasel installation. Please add them using 
+the add-on menu. The plugin called Shumway is an optional replacment for the gnash 
+browser plugin that this script provides. I highly suggest you do not use it. It is
+very broken, not yet good for n00bs, laggy, etc. However, once the plugin is fixed, 
+I suggest using it over gnash. Both are only for swf files. These are not for other 
+flash formats, such as flv. Also, I suggest using https://github.com/CrisBRM/user.js
+
+Once you become a more advance user, I suggest switching over to GNU Icecat. Icecat
+is another firefox fork made by the GNU Foundation themselves. Be forewarned: it is
+kinda slow, and buggy. Iceweasel is just fine for a n00b. 
+
+There are no major differences in useability for Iceweasel and any other browsers
+you have most likley used, with the exception it is possibly faster, it is not yet
+at the same HTML5 support level as Google Chrome, and does not have full Adobe Flash
+support (though Flash is kill, evil, and created a downfall of the internet circa 
+2001.)
+
+I hope you enjoy Iceweasel, and the plugins I have provided you. Please do not use
+Google Chrome or Chromium. It is a botnet. (Botnet is /g/ slang for Spyware. It is seldom
+used under its origional definition now.)
+
+    Copyright (C)  2015  Chocolate Chip Computing
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is avalible at http://gnu.org/licences.#!/bin/bash
 
 #     ________                     __      __          ________    _          
 #    / ____/ /_  ____  _________  / /___ _/ /____     / ____/ /_  (_)___      
@@ -820,7 +866,7 @@ ______         _          _           _        _ _
 _________/|___/\__|  _   |_|_| |_|___/\__\__,_|_|_| 
 | ___ \             | |               _             
 | |_/ /___  __ _  __| | _ __ ___  ___(_)            
-|    // _ \/ _  |/ _ |   _   _  \/ _ \              
+|    // _ \/ _  |/ _  |  _   _  \/ _ \              
 | |\ \  __/ (_| | (_| | | | | | |  __/_             
 \_| \_\___|\__,_|\__,_|_| |_| |_|\___(_)            
                                                     
@@ -1038,6 +1084,10 @@ you have most likley used, with the exception it is possibly faster, it is not y
 at the same HTML5 support level as Google Chrome, and does not have full Adobe Flash
 support (though Flash is kill, evil, and created a downfall of the internet circa 
 2001.)
+
+I hope you enjoy Iceweasel, and the plugins I have provided you. Please do not use
+Google Chrome or Chromium. It is a botnet. (Botnet is /g/ slang for Spyware. It is seldom
+used under its origional definition now.)
 
     Copyright (C)  2015  Chocolate Chip Computing
     Permission is granted to copy, distribute and/or modify this document
