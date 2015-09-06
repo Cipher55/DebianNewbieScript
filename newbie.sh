@@ -187,8 +187,9 @@ if [ "${ans:0:1}" = "D" ] || [ "${ans:0:1}" = "d" ]; then
     via email. The email address is chocolatechip@derpymail.org.
 "
   echo " "
+  sleep 10
   echo "Now continuing..."
-  sleep 5
+  sleep 2
 fi
 
 if [ "${ans:0:1}" = "C" ] || [ "${ans:0:1}" = "c" ]; then
