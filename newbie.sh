@@ -546,13 +546,13 @@ Bleachbit is a private drive-wiping tool much like
 CCleaner for Windows. Simpily open this up, select 
 settings (I HIGHLY SUGGEST you select everything 
 for deletion, and have the option for overwrite 
-enabled) and run it. It'll take a while. Let it 
+enabled) and run it. It will take a while. Let it 
 run. For deleting individual files, I suggest running
 wipe. To use wipe, preform 
 
 wipe file
 
-It's that simple. Don't run other programs while 
+It is that simple. Do not run other programs while 
 running Bleachbit. It will cause it to slow down.
 
     Copyright (C)  2015  Chocolate Chip Computing.
