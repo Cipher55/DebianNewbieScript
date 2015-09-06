@@ -188,7 +188,7 @@ if [ "${ans:0:1}" = "D" ] || [ "${ans:0:1}" = "d" ]; then
 "
   echo " "
   echo "Now continuing..."
-  sleep 1
+  sleep 5
 fi
 
 if [ "${ans:0:1}" = "C" ] || [ "${ans:0:1}" = "c" ]; then
